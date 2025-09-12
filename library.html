@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Главная</title>
+        <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css" />
+        <link href="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.css" rel="stylesheet" />
+        <link href="css/main.min.css?t=1687285106262" rel="stylesheet" />
+        <link href="css/fix-vendors.min.css?t=1687285106262" rel="stylesheet" />
+        <link href="css/academy.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="page">
+            <header class="header" id="header">
+                <div class="page__center">
+                    <div class="header__center">
+                        <div class="header__logo">
+                            <div class="card-image" style="padding-top: 28%"> <img src="img/logo.svg" alt="" /></div>
+                        </div>
+                        <div class="header__nav">
+                            <nav class="header__nav__group">
+                                <ul>
+                                    <li><a href="points.html">Точки продаж</a></li>
+                                    <li><a href="#">Прайс</a></li>
+                                    <li><a href="contacts.html">Контакты</a></li>
+                                    <li><a href="faq.html">Вопрос/ответ</a></li>
+                                    <li><a href="#">Запрос по VIN</a></li>
+                                </ul>
+                            </nav>
+                            <nav class="header__nav__group">
+                                <ul>
+                                    <li><a href="rules.html">Гарантия</a></li>
+                                    <li><a href="#">Поиск по авто</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="header__star"> <button class="btn btn-favorite btn-favorite--header"><svg
+                                    class="icon">
+                                    <use xlink:href="img/sprite-icons.svg#star"></use>
+                                </svg></button></div>
+                        <div class="header__catalog"> <button class="btn btn-filled">Каталог</button></div>
+                        <div class="header__burger"> <button
+                                class="btn-burger js-nav-burger-btn"><span></span><span></span><span></span></button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="page__content">
+                <div class="page__center">
+                    <nav class="nav-bread">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Академия </a></li>
+                            <li class="active"><span>Обучающая библиотека</span></li>
+                        </ul>
+                    </nav>
+                </div>
+                <section class="library">
+                    <div class="page__center">
+                        <h1 class="library__heading">
+                            Обучающая библиотека
+                        </h1>
+                        <div class="library__top-row">
+                            <div class="library__categories">
+                                <ul class="library__categories-list">
+                                    <li class="library__categories-list-item">
+                                        <a href="#" class="library__categories-link active">
+                                            Все
+                                        </a>
+                                    </li>
+                                    <li class="library__categories-list-item">
+                                        <a href="#" class="library__categories-link">
+                                            Обучающие видео
+                                        </a>
+                                    </li>
+                                    <li class="library__categories-list-item">
+                                        <a href="#" class="library__categories-link">
+                                            Статьи
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="library__search">
+                                <form action="/" method="POST" class="library__search-form">
+                                    <input type="text" class="library__search-input" name="q"
+                                        placeholder="Поиск по разделу">
+                                    <button class="library__search-submit" type="submit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                            viewBox="0 0 17 17">
+                                            <path
+                                                d="M12.1498 10.6918H11.3819L11.1098 10.4294C12.0952 9.28636 12.6369 7.82709 12.6358 6.3179C12.6358 5.06834 12.2653 3.84684 11.571 2.80786C10.8768 1.76889 9.8901 0.95911 8.73565 0.480924C7.58121 0.00273746 6.31089 -0.122378 5.08534 0.121399C3.85979 0.365177 2.73404 0.966898 1.85047 1.85047C0.966898 2.73404 0.365177 3.85979 0.121399 5.08534C-0.122378 6.31089 0.00273746 7.58121 0.480924 8.73565C0.95911 9.8901 1.76889 10.8768 2.80786 11.571C3.84684 12.2653 5.06834 12.6358 6.3179 12.6358C7.88279 12.6358 9.32133 12.0623 10.4294 11.1098L10.6918 11.3819V12.1498L15.5517 17L17 15.5517L12.1498 10.6918ZM6.3179 10.6918C3.89766 10.6918 1.94397 8.73814 1.94397 6.3179C1.94397 3.89766 3.89766 1.94397 6.3179 1.94397C8.73814 1.94397 10.6918 3.89766 10.6918 6.3179C10.6918 8.73814 8.73814 10.6918 6.3179 10.6918Z" />
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <ul class="library__list">
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/1.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Статья
+                                        </div>
+                                        <div class="library__card-tag">
+                                            Обучение
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/2.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Обучающее видео
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/1.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Статья
+                                        </div>
+                                        <div class="library__card-tag">
+                                            Обучение
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/2.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Обучающее видео
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/1.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Статья
+                                        </div>
+                                        <div class="library__card-tag">
+                                            Обучение
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/2.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Обучающее видео
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/1.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Статья
+                                        </div>
+                                        <div class="library__card-tag">
+                                            Обучение
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/2.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Обучающее видео
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/1.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Статья
+                                        </div>
+                                        <div class="library__card-tag">
+                                            Обучение
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/2.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Обучающее видео
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/1.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Статья
+                                        </div>
+                                        <div class="library__card-tag">
+                                            Обучение
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/2.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Обучающее видео
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/1.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Статья
+                                        </div>
+                                        <div class="library__card-tag">
+                                            Обучение
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/2.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Обучающее видео
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/1.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-1.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Статья
+                                        </div>
+                                        <div class="library__card-tag">
+                                            Обучение
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="library__list-item">
+                                <a href="#" class="library__card">
+                                    <div class="library__card-image-container">
+                                        <img src="img/library/2.webp" alt="" class="library__card-image">
+                                        <div class="library__card-icon">
+                                            <img src="img/library/icon-2.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="library__card-date">
+                                        29 июля 2025
+                                    </div>
+                                    <h3 class="library__card-title">
+                                        Профессиональный подход к обслуживанию системы кондиционирования
+                                    </h3>
+                                    <div class="library__card-tags">
+                                        <div class="library__card-tag">
+                                            Обучающее видео
+                                        </div>
+
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__list-item">
+                                    <a href="#" class="pagination__link active">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="#" class="pagination__link">
+                                        2
+                                    </a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="#" class="pagination__link">
+                                        3
+                                    </a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="#" class="pagination__link">
+                                        4
+                                    </a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="#" class="pagination__link">
+                                        5
+                                    </a>
+                                </li>
+
+                                <li class="pagination__list-item">
+                                    <a href="#" class="pagination__link">
+                                        ...
+                                    </a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="#" class="pagination__link">
+                                        12
+                                    </a>
+                                </li>
+                                <li class="pagination__list-item">
+                                    <a href="#" class="pagination__link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9">
+
+                                            <path
+                                                d="M4.36747 0.0729545L3.99119 0.460699C3.96844 0.48333 3.95036 0.510343 3.93802 0.540155C3.92568 0.569967 3.91932 0.601979 3.91932 0.634316C3.91932 0.666653 3.92568 0.698665 3.93802 0.728477C3.95036 0.758289 3.96844 0.785301 3.99119 0.807932L7.09838 3.96197H0.239754C0.176703 3.96344 0.116636 3.98952 0.0720398 4.03479C0.0274441 4.08006 0.00175052 4.14103 0.000300499 4.20504V4.78376C-0.00133754 4.81612 0.00373459 4.84846 0.0151888 4.87871C0.0266429 4.90895 0.044224 4.93641 0.0667946 4.95933C0.0893652 4.98224 0.116423 5.00008 0.146216 5.01171C0.17601 5.02334 0.207876 5.02848 0.239754 5.02682H7.08128L3.99119 8.19244C3.96844 8.21507 3.95036 8.24208 3.93802 8.27189C3.92568 8.3017 3.91932 8.33372 3.91932 8.36605C3.91932 8.39839 3.92568 8.4304 3.93802 8.46021C3.95036 8.49003 3.96844 8.51704 3.99119 8.53967L4.39028 8.92163C4.41168 8.94626 4.438 8.96599 4.46749 8.9795C4.49698 8.99301 4.52896 9 4.56132 9C4.59367 9 4.62566 8.99301 4.65515 8.9795C4.68464 8.96599 4.71096 8.94626 4.73236 8.92163L8.92279 4.6738C8.94706 4.65208 8.96649 4.62536 8.9798 4.59543C8.99312 4.56549 9 4.53303 9 4.50018C9 4.46734 8.99312 4.43487 8.9798 4.40494C8.96649 4.37501 8.94706 4.34829 8.92279 4.32657L4.70955 0.0729545C4.68726 0.0498566 4.66064 0.0315068 4.63127 0.0189796C4.60191 0.00645252 4.57037 0 4.53851 0C4.50666 0 4.47512 0.00645252 4.44575 0.0189796C4.41638 0.0315068 4.38977 0.0498566 4.36747 0.0729545Z" />
+
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+            <footer class="footer" id="footer">
+                <div class="page__center">
+                    <div class="footer__center">
+                        <div class="footer__left">
+                            <div class="footer__col-about">
+                                <div class="footer__logo">
+                                    <div class="card-image" style="padding-top: 28%"> <img src="img/logo--white.svg"
+                                            alt="" /></div>
+                                </div>
+                            </div>
+                            <div class="footer__col-contacts"> <a href="#" class="footer__phone"><svg class="icon">
+                                        <use xlink:href="img/sprite-icons.svg#phone"></use>
+                                    </svg><span>8 800 555-89-65</span></a>
+                                <div class="footer__social">
+                                    <nav class="nav-social"> <a href="#"><svg class="icon">
+                                                <use xlink:href="img/sprite-social.svg#vk"></use>
+                                            </svg></a> <a href="#"><svg class="icon">
+                                                <use xlink:href="img/sprite-social.svg#youtube"></use>
+                                            </svg></a> <a href="#"><svg class="icon">
+                                                <use xlink:href="img/sprite-social.svg#r"></use>
+                                            </svg></a> <a href="#"><svg class="icon">
+                                                <use xlink:href="img/sprite-social.svg#d2"></use>
+                                            </svg></a> <a href="#"><svg class="icon">
+                                                <use xlink:href="img/sprite-social.svg#telegram"></use>
+                                            </svg></a></nav>
+                                </div>
+                            </div>
+                            <div class="footer__col-info">
+                                <nav class="footer__nav">
+                                    <ul>
+                                        <li><a href="#">Пользовательское соглашение</a></li>
+                                        <li><a href="#">Проверка совместимости</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="footer__tecdoc">
+                                    <div class="footer__tecdoc__logo">
+                                        <div class="card-image" style="padding-top: 24.36%"> <img
+                                                src="img/logo-tecdoc--white.png" alt="" /></div>
+                                    </div>
+                                    <div class="footer__tecdoc__desc"> Компания LUZAR включена<br />в базу данных
+                                        каталога запчастей TecDoc</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__right">
+                            <div class="footer__year">
+                                <div class="card-image" style="padding-top: 93.45%"> <img src="img/20-years.svg"
+                                        alt="" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__desc"> 2023 © ООО "ЭРЛАЙН".<br />Производитель автозапчастей и
+                        автоаксессуаров.<br />Все права защищены. Реализация в РФ и СНГ.</div>
+                </div>
+            </footer>
+            <nav class="nav-burger" id="nav-burger">
+                <div class="page__center">
+                    <div class="nav-burger__group">
+                        <ul>
+                            <li> <a href="#"><span>Каталог</span><svg class="icon flip-x">
+                                        <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                    </svg></a></li>
+                            <li> <a href="#"><span>Точки продаж</span><svg class="icon flip-x">
+                                        <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                    </svg></a></li>
+                            <li> <a href="#"><span>Поиск по автомобилям</span><svg class="icon flip-x">
+                                        <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                    </svg></a></li>
+                            <li> <a href="#"><span>Гарантия и возврат</span><svg class="icon flip-x">
+                                        <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                    </svg></a></li>
+                            <li> <a href="#"><span>Прайс</span><svg class="icon flip-x">
+                                        <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-burger__group">
+                        <ul>
+                            <li><a href="#">Материалы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Вопрос/ответ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <aside class="popup-ask mfp-with-anim mfp-hide" id="popup-ask">
+                <h2 class="popup-ask__title">Запрос по VIN</h2>
+                <form action="#" class="form-default">
+                    <div class="form-default__item"> <label class="form-default__label">ФИО <span>*</span></label>
+                        <div class="input-default"> <input type="text" /></div>
+                    </div>
+                    <div class="form-default__item"> <label class="form-default__label">VIN <span>*</span></label>
+                        <div class="input-default"> <input type="text" /></div>
+                    </div>
+                    <div class="form-default__item"> <label class="form-default__label">Марка\модель
+                            <span>*</span></label>
+                        <div class="input-default"> <input type="text" /></div>
+                    </div>
+                    <div class="form-default__item"> <label class="form-default__label">E-mail <span>*</span></label>
+                        <div class="input-default"> <input type="text" /></div>
+                    </div>
+                    <div class="form-default__item"> <label class="form-default__label">Телефон <span>*</span></label>
+                        <div class="input-default"> <input type="text" /></div>
+                    </div>
+                    <div class="form-default__item"> <label class="form-default__label">Интересующие запчасти
+                            <span>*</span></label>
+                        <div class="input-default"> <input type="text" /></div>
+                    </div>
+                    <div class="form-default__btns"> <button class="btn btn-filled">Отправить</button></div>
+                </form>
+            </aside>
+            <aside class="popup-markets mfp-with-anim mfp-hide" id="popup-markets">
+                <div class="popup-markets__header">
+                    <h2 class="popup-markets__title">Маркетплейсы</h2>
+                    <div class="popup-markets__region">Россия</div>
+                </div>
+                <table class="table-markets">
+                    <tr>
+                        <th>Наименование</th>
+                        <th>Сайт</th>
+                    </tr>
+                    <tr>
+                        <td>OZON</td>
+                        <td><a href="#">Перейти</a></td>
+                    </tr>
+                    <tr>
+                        <td>WILDBERRIS</td>
+                        <td><a href="#">Перейти</a></td>
+                    </tr>
+                    <tr>
+                        <td>ЯНДЕКС МАРКЕТ</td>
+                        <td><a href="#">Перейти</a></td>
+                    </tr>
+                    <tr>
+                        <td>ОНЛАЙН ТРЕЙД.РУ</td>
+                        <td><a href="#">Перейти</a></td>
+                    </tr>
+                    <tr>
+                        <td>ВсеИнструмены.ру</td>
+                        <td><a href="#">Перейти</a></td>
+                    </tr>
+                    <tr>
+                        <td>СБЕР МЕГАМАРКЕТ</td>
+                        <td><a href="#">Перейти</a></td>
+                    </tr>
+                    <tr>
+                        <td>enex.market</td>
+                        <td><a href="#">Перейти</a></td>
+                    </tr>
+                </table>
+            </aside>
+        </div>
+        <script src="js/vendor/modernizr.js?t=1687285106262"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery-custom-select@1.6.4/dist/js/jquery.custom-select.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="js/main.min.js?t=1687285106262"></script>
+        <div id="notify" class="notify"></div>
+        <link rel="stylesheet" href="https://ildar-meyker.ru/libs/pagelist/css/pagelist.min.css" />
+        <script src="https://ildar-meyker.ru/libs/pagelist/js/pagelist.min.js"></script>
+    </body>
+
+</html>
