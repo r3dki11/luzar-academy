@@ -1,406 +1,628 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Главная</title>
-        <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css" />
-        <link href="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.css" rel="stylesheet" />
-        <link href="css/main.min.css?t=1687285106262" rel="stylesheet" />
-        <link href="css/fix-vendors.min.css?t=1687285106262" rel="stylesheet" />
-        <link href="css/academy.css" rel="stylesheet" />
-    </head>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Главная</title>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css" />
+    <link href="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.css" rel="stylesheet" />
+    <link href="css/main.min.css?t=1687285106262" rel="stylesheet" />
+    <link href="css/fix-vendors.min.css?t=1687285106262" rel="stylesheet" />
+    <link href="css/academy.css" rel="stylesheet" />
+</head>
 
-    <body>
-        <div class="page">
-            <header class="header" id="header">
+<body>
+    <div class="page">
+        <header class="header" id="header">
+            <div class="page__center">
+                <div class="header__center">
+                    <div class="header__logo">
+                        <div class="card-image" style="padding-top: 28%"> <img src="img/logo.svg" alt="" /></div>
+                    </div>
+                    <div class="header__nav">
+                        <nav class="header__nav__group">
+                            <ul>
+                                <li><a href="points.html">Точки продаж</a></li>
+                                <li><a href="#">Прайс</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                                <li><a href="faq.html">Вопрос/ответ</a></li>
+                                <li><a href="#">Запрос по VIN</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="header__nav__group">
+                            <ul>
+                                <li><a href="rules.html">Гарантия</a></li>
+                                <li><a href="#">Поиск по авто</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__star"> <button class="btn btn-favorite btn-favorite--header"><svg class="icon">
+                                <use xlink:href="img/sprite-icons.svg#star"></use>
+                            </svg></button></div>
+                    <div class="header__catalog"> <button class="btn btn-filled">Каталог</button></div>
+                    <div class="header__burger"> <button
+                            class="btn-burger js-nav-burger-btn"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page__content">
+            <div class="page__center">
+                <nav class="nav-bread">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Академия </a></li>
+                        <li><span>Академия LUZAR</span></li>
+                    </ul>
+                </nav>
+            </div>
+            <section class="academy-intro">
                 <div class="page__center">
-                    <div class="header__center">
-                        <div class="header__logo">
-                            <div class="card-image" style="padding-top: 28%"> <img src="img/logo.svg" alt="" /></div>
+                    <div class="academy-intro__card">
+                        <div class="academy-intro__card-bg">
+
+                            <picture>
+                                <source srcset="img/academy-intro/bg-mobile.webp" media="(max-width: 599.98px)" />
+                                <img src="img/academy-intro/bg.webp" alt="">
+                            </picture>
                         </div>
-                        <div class="header__nav">
-                            <nav class="header__nav__group">
-                                <ul>
-                                    <li><a href="points.html">Точки продаж</a></li>
-                                    <li><a href="#">Прайс</a></li>
-                                    <li><a href="contacts.html">Контакты</a></li>
-                                    <li><a href="faq.html">Вопрос/ответ</a></li>
-                                    <li><a href="#">Запрос по VIN</a></li>
-                                </ul>
-                            </nav>
-                            <nav class="header__nav__group">
-                                <ul>
-                                    <li><a href="rules.html">Гарантия</a></li>
-                                    <li><a href="#">Поиск по авто</a></li>
-                                </ul>
-                            </nav>
+                        <div class="academy-intro__title-wrapper">
+                            <picture>
+                                <source srcset="img/academy-intro/decor-mobile.svg" media="(max-width: 599.98px)" />
+                                <img src="img/academy-intro/decor.svg" alt="" class="academy-intro__title-decor">
+                            </picture>
+                            <h1 class="academy-intro__title">
+                                Академия LUZAR
+                            </h1>
                         </div>
-                        <div class="header__star"> <button class="btn btn-favorite btn-favorite--header"><svg
-                                    class="icon">
-                                    <use xlink:href="img/sprite-icons.svg#star"></use>
-                                </svg></button></div>
-                        <div class="header__catalog"> <button class="btn btn-filled">Каталог</button></div>
-                        <div class="header__burger"> <button
-                                class="btn-burger js-nav-burger-btn"><span></span><span></span><span></span></button>
+                        <div class="academy-intro__large-text">
+                            Профессиональное обучение&nbsp;для автомехаников и&nbsp;специалистов СТО
+                        </div>
+                        <div class="academy-intro__small-text">
+                            повышение квалификации и отработка практических навыков по работе с системами
+                            кондиционирования автомобилей и продукцией LUZAR
                         </div>
                     </div>
                 </div>
-            </header>
-            <main class="page__content">
+            </section>
+            <section class="academy-program">
                 <div class="page__center">
-                    <nav class="nav-bread">
-                        <ul>
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">Академия </a></li>
-                            <li><span>Академия LUZAR</span></li>
-                        </ul>
-                    </nav>
+                    <h2 class="academy-program__heading">
+                        О чем программа
+                    </h2>
+                    <h3 class="academy-program__secondary-heading">
+                        Академия LUZAR разработала обширную <em>обучающую программу,</em> включающую теорию и
+                        практику:
+                    </h3>
+                    <ul class="academy-program__list">
+                        <li class="academy-program__list-item">
+                            <div class="academy-program__card">
+                                <h4 class="academy-program__card-title">
+                                    Устройство, диагностика, обслуживание и ремонт систем кондиционирования
+                                </h4>
+                                <div class="academy-program__card-number">
+                                    01
+                                </div>
+                            </div>
+                        </li>
+                        <li class="academy-program__list-item">
+                            <div class="academy-program__card">
+                                <h4 class="academy-program__card-title">
+                                    Работа с современными инструментами и методами тестирования
+                                </h4>
+                                <div class="academy-program__card-number">
+                                    02
+                                </div>
+                            </div>
+                        </li>
+                        <li class="academy-program__list-item">
+                            <div class="academy-program__card">
+                                <h4 class="academy-program__card-title">
+                                    Практические решения для реальных задач на СТО
+                                </h4>
+                                <div class="academy-program__card-number">
+                                    03
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <picture>
+                        <source srcset="img/academy-program/program-mobile.webp" media="(max-width: 599.98px)" />
+                        <img src="img/academy-program/program.webp" alt="" class="academy-program__image" />
+                    </picture>
                 </div>
-                <section class="academy-intro">
-                    <div class="page__center">
-                        <div class="academy-intro__card">
-                            <div class="academy-intro__card-bg">
+            </section>
+            <section class="academy-formats">
+                <div class="page__center">
+                    <h2 class="academy-formats__heading">
+                        Форматы обучения
+                    </h2>
+                    <h3 class="academy-formats__secondary-heading">
+                        Обучение в Академии доступно в двух форматах – <b>онлайн и оффлайн</b>
+                    </h3>
+                    <div class="academy-formats__text">
+                        <p>
+                            В онлайн формате доступна библиотека видеолекций, записей и методических материалов для
+                            самостоятельного обучения.
+                        </p>
+                        <p>
+                            Живые семинары проходят оффлайн в городах страны, участие подтверждается сертификатом о
+                            повышении квалификации.
+                        </p>
+                    </div>
+                    <ul class="academy-formats__list">
+                        <li class="academy-formats__list-item">
+                            <div class="academy-formats__card">
+                                <div class="academy-formats__card-title">
+                                    Выездные<br>
+                                    семинары
+                                </div>
+                                <div class="academy-formats__card-arrow">
+                                    <div class="academy-formats__card-arrow-outer">
+                                        <div class="academy-formats__card-arrow-inner">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M22.2411 0C22.7076 0 23.155 0.185315 23.4848 0.515177C23.8147 0.845039 24 1.29243 24 1.75892V15.8303C24 16.2968 23.8147 16.7442 23.4848 17.0741C23.155 17.4039 22.7076 17.5892 22.2411 17.5892C21.7746 17.5892 21.3272 17.4039 20.9973 17.0741C20.6675 16.7442 20.4822 16.2968 20.4822 15.8303V6.00496L2.98087 23.5062C2.64913 23.8267 2.20482 24.0039 1.74364 23.9999C1.28245 23.9959 0.841295 23.8109 0.515176 23.4848C0.189058 23.1587 0.00407406 22.7175 6.64919e-05 22.2564C-0.00394107 21.7952 0.173348 21.3509 0.49375 21.0191L17.995 3.51785H8.16969C7.7032 3.51785 7.25581 3.33253 6.92595 3.00267C6.59608 2.67281 6.41077 2.22542 6.41077 1.75892C6.41077 1.29243 6.59608 0.845039 6.92595 0.515177C7.25581 0.185315 7.7032 0 8.16969 0H22.2411Z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="academy-formats__card-text">
+                                    Живые обучающие сессии в городах страны проходят в оборудованных залах с
+                                    использованием учебного автомобиля LUZAR
+                                </div>
+                            </div>
+                        </li>
+                        <li class="academy-formats__list-item">
+                            <div class="academy-formats__card">
+                                <div class="academy-formats__card-title">
+                                    Обучающая<br>
+                                    библиотека
+                                </div>
+                                <div class="academy-formats__card-arrow">
+                                    <div class="academy-formats__card-arrow-outer">
+                                        <div class="academy-formats__card-arrow-inner">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                viewBox="0 0 24 24">
+                                                <path
+                                                    d="M22.2411 0C22.7076 0 23.155 0.185315 23.4848 0.515177C23.8147 0.845039 24 1.29243 24 1.75892V15.8303C24 16.2968 23.8147 16.7442 23.4848 17.0741C23.155 17.4039 22.7076 17.5892 22.2411 17.5892C21.7746 17.5892 21.3272 17.4039 20.9973 17.0741C20.6675 16.7442 20.4822 16.2968 20.4822 15.8303V6.00496L2.98087 23.5062C2.64913 23.8267 2.20482 24.0039 1.74364 23.9999C1.28245 23.9959 0.841295 23.8109 0.515176 23.4848C0.189058 23.1587 0.00407406 22.7175 6.64919e-05 22.2564C-0.00394107 21.7952 0.173348 21.3509 0.49375 21.0191L17.995 3.51785H8.16969C7.7032 3.51785 7.25581 3.33253 6.92595 3.00267C6.59608 2.67281 6.41077 2.22542 6.41077 1.75892C6.41077 1.29243 6.59608 0.845039 6.92595 0.515177C7.25581 0.185315 7.7032 0 8.16969 0H22.2411Z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="academy-formats__card-text">
+                                    Видеолекции и записи семинаров, статьи и методические материалы, фотоотчёты и
+                                    новости мероприятий
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="academy-schedule">
+                <div class="page__center">
+                    <h2 class="academy-schedule__heading">
+                        Расписание выездных семинаров
+                    </h2>
+                    <div class="academy-schedule__card">
+                        <div class="academy-schedule__card-bg">
+                            <picture>
+                                <source srcset="img/academy-schedule/bg-mobile.webp" media="(max-width: 599.98px)" />
+                                <img src="img/academy-schedule/bg.webp" alt="">
+                            </picture>
+                        </div>
+                        <h3 class="academy-schedule__card-title">
+                            Программа обучения
+                        </h3>
+                        <div class="academy-schedule__card-large-text">
+                            Профессиональный подход к обслуживанию системы кондиционирования
+                        </div>
+                        <div class="academy-schedule__card-small-text">
+                            Лекции и семинары проходят в оборудованных залах с использованием учебного автомобиля
+                            LUZAR в группах по 15-20 человек. Участники получают именной сертификат подтверждающий
+                            повышение квалификации.
+                        </div>
+                        <div class="academy-schedule__card-remark">
 
-                                <picture>
-                                    <source srcset="img/academy-intro/bg-mobile.webp" media="(max-width: 599.98px)" />
-                                    <img src="img/academy-intro/bg.webp" alt="">
-                                </picture>
-                            </div>
-                            <div class="academy-intro__title-wrapper">
-                                <picture>
-                                    <source srcset="img/academy-intro/decor-mobile.svg" media="(max-width: 599.98px)" />
-                                    <img src="img/academy-intro/decor.svg" alt="" class="academy-intro__title-decor">
-                                </picture>
-                                <h1 class="academy-intro__title">
-                                    Академия LUZAR
-                                </h1>
-                            </div>
-                            <div class="academy-intro__large-text">
-                                Профессиональное обучение&nbsp;для автомехаников и&nbsp;специалистов СТО
-                            </div>
-                            <div class="academy-intro__small-text">
-                                повышение квалификации и отработка практических навыков по работе с системами
-                                кондиционирования автомобилей и продукцией LUZAR
-                            </div>
+                            Оставьте заявку с вами свяжется региональный представителей LUZAR в вашем городе
                         </div>
+
                     </div>
-                </section>
-                <section class="academy-program">
-                    <div class="page__center">
-                        <h2 class="academy-program__heading">
-                            О чем программа
-                        </h2>
-                        <h3 class="academy-program__secondary-heading">
-                            Академия LUZAR разработала обширную <em>обучающую программу,</em> включающую теорию и
-                            практику:
-                        </h3>
-                        <ul class="academy-program__list">
-                            <li class="academy-program__list-item">
-                                <div class="academy-program__card">
-                                    <h4 class="academy-program__card-title">
-                                        Устройство, диагностика, обслуживание и ремонт систем кондиционирования
-                                    </h4>
-                                    <div class="academy-program__card-number">
-                                        01
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="academy-program__list-item">
-                                <div class="academy-program__card">
-                                    <h4 class="academy-program__card-title">
-                                        Работа с современными инструментами и методами тестирования
-                                    </h4>
-                                    <div class="academy-program__card-number">
-                                        02
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="academy-program__list-item">
-                                <div class="academy-program__card">
-                                    <h4 class="academy-program__card-title">
-                                        Практические решения для реальных задач на СТО
-                                    </h4>
-                                    <div class="academy-program__card-number">
-                                        03
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <picture>
-                            <source srcset="img/academy-program/program-mobile.webp" media="(max-width: 599.98px)" />
-                            <img src="img/academy-program/program.webp" alt="" class="academy-program__image" />
-                        </picture>
-                    </div>
-                </section>
-                <section class="academy-formats">
-                    <div class="page__center">
-                        <h2 class="academy-formats__heading">
-                            Форматы обучения
-                        </h2>
-                        <h3 class="academy-formats__secondary-heading">
-                            Обучение в Академии доступно в двух форматах – <b>онлайн и оффлайн</b>
-                        </h3>
-                        <div class="academy-formats__text">
-                            <p>
-                                В онлайн формате доступна библиотека видеолекций, записей и методических материалов для
-                                самостоятельного обучения.
-                            </p>
-                            <p>
-                                Живые семинары проходят оффлайн в городах страны, участие подтверждается сертификатом о
-                                повышении квалификации.
-                            </p>
-                        </div>
-                        <ul class="academy-formats__list">
-                            <li class="academy-formats__list-item">
-                                <div class="academy-formats__card">
-                                    <div class="academy-formats__card-title">
-                                        Выездные<br>
-                                        семинары
-                                    </div>
-                                    <div class="academy-formats__card-arrow">
-                                        <div class="academy-formats__card-arrow-outer">
-                                            <div class="academy-formats__card-arrow-inner">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24">
+                    <div class="academy-schedule__slider">
+                        <button class="academy-schedule__slider-arrow academy-schedule__slider-arrow--prev">
+                            <svg width="32" height="32" viewBox="0 0 32 32">
+                                <path
+                                    d="M18.299 10.6932C17.9033 10.3082 17.2701 10.3171 16.8849 10.7127L11.3878 16.3592L16.9044 21.7264C17.3003 22.1115 17.9334 22.1027 18.3185 21.7069C18.7034 21.311 18.6947 20.6778 18.299 20.2928L14.216 16.3192L18.3185 12.1072C18.7035 11.7115 18.6946 11.0784 18.299 10.6932Z" />
+                            </svg>
+                        </button>
+                        <div class="academy-schedule__slider-wrapper">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="academy-schedule__slider-card">
+                                            <div class="academy-schedule__slider-card-icon">
+                                                <img src="img/academy-slider/1.svg" alt="">
+                                            </div>
+                                            <div class="academy-schedule__slider-card-date">
+                                                Ожидается
+                                            </div>
+                                            <div class="academy-schedule__slider-card-city">
+                                                г. Казань
+                                            </div>
+                                            <div
+                                                class="academy-schedule__slider-card-link academy-schedule__slider-card-link--disabled">
+                                                Регистрация недоступна
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+                                                    viewBox="0 0 9 9">
                                                     <path
-                                                        d="M22.2411 0C22.7076 0 23.155 0.185315 23.4848 0.515177C23.8147 0.845039 24 1.29243 24 1.75892V15.8303C24 16.2968 23.8147 16.7442 23.4848 17.0741C23.155 17.4039 22.7076 17.5892 22.2411 17.5892C21.7746 17.5892 21.3272 17.4039 20.9973 17.0741C20.6675 16.7442 20.4822 16.2968 20.4822 15.8303V6.00496L2.98087 23.5062C2.64913 23.8267 2.20482 24.0039 1.74364 23.9999C1.28245 23.9959 0.841295 23.8109 0.515176 23.4848C0.189058 23.1587 0.00407406 22.7175 6.64919e-05 22.2564C-0.00394107 21.7952 0.173348 21.3509 0.49375 21.0191L17.995 3.51785H8.16969C7.7032 3.51785 7.25581 3.33253 6.92595 3.00267C6.59608 2.67281 6.41077 2.22542 6.41077 1.75892C6.41077 1.29243 6.59608 0.845039 6.92595 0.515177C7.25581 0.185315 7.7032 0 8.16969 0H22.2411Z" />
+                                                        d="M8.74994 6.59961C8.74994 7.01382 8.41416 7.34961 7.99994 7.34961C7.58573 7.34961 7.24994 7.01382 7.24994 6.59961V2.81055L1.53022 8.53027C1.23732 8.82317 0.762563 8.82317 0.46967 8.53027C0.176777 8.23738 0.176777 7.76262 0.46967 7.46973L6.1894 1.75H2.40033C1.98612 1.75 1.65033 1.41421 1.65033 1C1.65033 0.585786 1.98612 0.25 2.40033 0.25H7.99994C8.41416 0.25 8.74994 0.585786 8.74994 1V6.59961Z" />
                                                 </svg>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="academy-formats__card-text">
-                                        Живые обучающие сессии в городах страны проходят в оборудованных залах с
-                                        использованием учебного автомобиля LUZAR
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="academy-formats__list-item">
-                                <div class="academy-formats__card">
-                                    <div class="academy-formats__card-title">
-                                        Обучающая<br>
-                                        библиотека
-                                    </div>
-                                    <div class="academy-formats__card-arrow">
-                                        <div class="academy-formats__card-arrow-outer">
-                                            <div class="academy-formats__card-arrow-inner">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24">
+                                    <div class="swiper-slide">
+                                        <a href="#" class="academy-schedule__slider-card">
+                                            <div class="academy-schedule__slider-card-icon">
+                                                <img src="img/academy-slider/1.svg" alt="">
+                                            </div>
+                                            <div class="academy-schedule__slider-card-date">
+                                                15.09.2025
+                                            </div>
+                                            <div class="academy-schedule__slider-card-city">
+                                                г. Казань
+                                            </div>
+                                            <div class="academy-schedule__slider-card-link">
+                                                Регистрация
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+                                                    viewBox="0 0 9 9">
                                                     <path
-                                                        d="M22.2411 0C22.7076 0 23.155 0.185315 23.4848 0.515177C23.8147 0.845039 24 1.29243 24 1.75892V15.8303C24 16.2968 23.8147 16.7442 23.4848 17.0741C23.155 17.4039 22.7076 17.5892 22.2411 17.5892C21.7746 17.5892 21.3272 17.4039 20.9973 17.0741C20.6675 16.7442 20.4822 16.2968 20.4822 15.8303V6.00496L2.98087 23.5062C2.64913 23.8267 2.20482 24.0039 1.74364 23.9999C1.28245 23.9959 0.841295 23.8109 0.515176 23.4848C0.189058 23.1587 0.00407406 22.7175 6.64919e-05 22.2564C-0.00394107 21.7952 0.173348 21.3509 0.49375 21.0191L17.995 3.51785H8.16969C7.7032 3.51785 7.25581 3.33253 6.92595 3.00267C6.59608 2.67281 6.41077 2.22542 6.41077 1.75892C6.41077 1.29243 6.59608 0.845039 6.92595 0.515177C7.25581 0.185315 7.7032 0 8.16969 0H22.2411Z" />
+                                                        d="M8.74994 6.59961C8.74994 7.01382 8.41416 7.34961 7.99994 7.34961C7.58573 7.34961 7.24994 7.01382 7.24994 6.59961V2.81055L1.53022 8.53027C1.23732 8.82317 0.762563 8.82317 0.46967 8.53027C0.176777 8.23738 0.176777 7.76262 0.46967 7.46973L6.1894 1.75H2.40033C1.98612 1.75 1.65033 1.41421 1.65033 1C1.65033 0.585786 1.98612 0.25 2.40033 0.25H7.99994C8.41416 0.25 8.74994 0.585786 8.74994 1V6.59961Z" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="academy-schedule__slider-card academy-schedule__slider-card--disabled">
+                                            <div class="academy-schedule__slider-card-icon">
+                                                <img src="img/academy-slider/2.svg" alt="">
+                                            </div>
+                                            <div class="academy-schedule__slider-card-date">
+                                                29 июля 2025
+                                            </div>
+                                            <div class="academy-schedule__slider-card-city">
+                                                г. Пятигорск
+                                            </div>
+                                            <div
+                                                class="academy-schedule__slider-card-link academy-schedule__slider-card-link--disabled">
+                                                Завершено
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+                                                    viewBox="0 0 9 9">
+                                                    <path
+                                                        d="M8.74994 6.59961C8.74994 7.01382 8.41416 7.34961 7.99994 7.34961C7.58573 7.34961 7.24994 7.01382 7.24994 6.59961V2.81055L1.53022 8.53027C1.23732 8.82317 0.762563 8.82317 0.46967 8.53027C0.176777 8.23738 0.176777 7.76262 0.46967 7.46973L6.1894 1.75H2.40033C1.98612 1.75 1.65033 1.41421 1.65033 1C1.65033 0.585786 1.98612 0.25 2.40033 0.25H7.99994C8.41416 0.25 8.74994 0.585786 8.74994 1V6.59961Z" />
                                                 </svg>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="academy-formats__card-text">
-                                        Видеолекции и записи семинаров, статьи и методические материалы, фотоотчёты и
-                                        новости мероприятий
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="academy-schedule__slider-card academy-schedule__slider-card--disabled">
+                                            <div class="academy-schedule__slider-card-icon">
+                                                <img src="img/academy-slider/2.svg" alt="">
+                                            </div>
+                                            <div class="academy-schedule__slider-card-date">
+                                                29 июля 2025
+                                            </div>
+                                            <div class="academy-schedule__slider-card-city">
+                                                г. Санкт-Петербург
+                                            </div>
+                                            <div
+                                                class="academy-schedule__slider-card-link academy-schedule__slider-card-link--disabled">
+                                                Завершено
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+                                                    viewBox="0 0 9 9">
+                                                    <path
+                                                        d="M8.74994 6.59961C8.74994 7.01382 8.41416 7.34961 7.99994 7.34961C7.58573 7.34961 7.24994 7.01382 7.24994 6.59961V2.81055L1.53022 8.53027C1.23732 8.82317 0.762563 8.82317 0.46967 8.53027C0.176777 8.23738 0.176777 7.76262 0.46967 7.46973L6.1894 1.75H2.40033C1.98612 1.75 1.65033 1.41421 1.65033 1C1.65033 0.585786 1.98612 0.25 2.40033 0.25H7.99994C8.41416 0.25 8.74994 0.585786 8.74994 1V6.59961Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="academy-schedule__slider-card academy-schedule__slider-card--disabled">
+                                            <div class="academy-schedule__slider-card-icon">
+                                                <img src="img/academy-slider/2.svg" alt="">
+                                            </div>
+                                            <div class="academy-schedule__slider-card-date">
+                                                29 июля 2025
+                                            </div>
+                                            <div class="academy-schedule__slider-card-city">
+                                                г. Ростов-на-Дону
+                                            </div>
+                                            <div
+                                                class="academy-schedule__slider-card-link academy-schedule__slider-card-link--disabled">
+                                                Завершено
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+                                                    viewBox="0 0 9 9">
+                                                    <path
+                                                        d="M8.74994 6.59961C8.74994 7.01382 8.41416 7.34961 7.99994 7.34961C7.58573 7.34961 7.24994 7.01382 7.24994 6.59961V2.81055L1.53022 8.53027C1.23732 8.82317 0.762563 8.82317 0.46967 8.53027C0.176777 8.23738 0.176777 7.76262 0.46967 7.46973L6.1894 1.75H2.40033C1.98612 1.75 1.65033 1.41421 1.65033 1C1.65033 0.585786 1.98612 0.25 2.40033 0.25H7.99994C8.41416 0.25 8.74994 0.585786 8.74994 1V6.59961Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="academy-schedule__slider-card academy-schedule__slider-card--disabled">
+                                            <div class="academy-schedule__slider-card-icon">
+                                                <img src="img/academy-slider/3.svg" alt="">
+                                            </div>
+                                            <div class="academy-schedule__slider-card-date">
+                                                29 июля 2025
+                                            </div>
+                                            <div class="academy-schedule__slider-card-city">
+                                                г. Ставрополь
+                                            </div>
+                                            <div
+                                                class="academy-schedule__slider-card-link academy-schedule__slider-card-link--disabled">
+                                                Завершено
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+                                                    viewBox="0 0 9 9">
+                                                    <path
+                                                        d="M8.74994 6.59961C8.74994 7.01382 8.41416 7.34961 7.99994 7.34961C7.58573 7.34961 7.24994 7.01382 7.24994 6.59961V2.81055L1.53022 8.53027C1.23732 8.82317 0.762563 8.82317 0.46967 8.53027C0.176777 8.23738 0.176777 7.76262 0.46967 7.46973L6.1894 1.75H2.40033C1.98612 1.75 1.65033 1.41421 1.65033 1C1.65033 0.585786 1.98612 0.25 2.40033 0.25H7.99994C8.41416 0.25 8.74994 0.585786 8.74994 1V6.59961Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="academy-schedule__slider-card">
+                                            <div class="academy-schedule__slider-card-icon">
+                                                <img src="img/academy-slider/1.svg" alt="">
+                                            </div>
+                                            <div class="academy-schedule__slider-card-date">
+                                                Ожидается
+                                            </div>
+                                            <div class="academy-schedule__slider-card-city">
+                                                г. Казань
+                                            </div>
+                                            <div
+                                                class="academy-schedule__slider-card-link academy-schedule__slider-card-link--disabled">
+                                                Регистрация недоступна
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+                                                    viewBox="0 0 9 9">
+                                                    <path
+                                                        d="M8.74994 6.59961C8.74994 7.01382 8.41416 7.34961 7.99994 7.34961C7.58573 7.34961 7.24994 7.01382 7.24994 6.59961V2.81055L1.53022 8.53027C1.23732 8.82317 0.762563 8.82317 0.46967 8.53027C0.176777 8.23738 0.176777 7.76262 0.46967 7.46973L6.1894 1.75H2.40033C1.98612 1.75 1.65033 1.41421 1.65033 1C1.65033 0.585786 1.98612 0.25 2.40033 0.25H7.99994C8.41416 0.25 8.74994 0.585786 8.74994 1V6.59961Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#" class="academy-schedule__slider-card">
+                                            <div class="academy-schedule__slider-card-icon">
+                                                <img src="img/academy-slider/1.svg" alt="">
+                                            </div>
+                                            <div class="academy-schedule__slider-card-date">
+                                                15.09.2025
+                                            </div>
+                                            <div class="academy-schedule__slider-card-city">
+                                                г. Казань
+                                            </div>
+                                            <div class="academy-schedule__slider-card-link">
+                                                Регистрация
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+                                                    viewBox="0 0 9 9">
+                                                    <path
+                                                        d="M8.74994 6.59961C8.74994 7.01382 8.41416 7.34961 7.99994 7.34961C7.58573 7.34961 7.24994 7.01382 7.24994 6.59961V2.81055L1.53022 8.53027C1.23732 8.82317 0.762563 8.82317 0.46967 8.53027C0.176777 8.23738 0.176777 7.76262 0.46967 7.46973L6.1894 1.75H2.40033C1.98612 1.75 1.65033 1.41421 1.65033 1C1.65033 0.585786 1.98612 0.25 2.40033 0.25H7.99994C8.41416 0.25 8.74994 0.585786 8.74994 1V6.59961Z" />
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div
+                                            class="academy-schedule__slider-card academy-schedule__slider-card--disabled">
+                                            <div class="academy-schedule__slider-card-icon">
+                                                <img src="img/academy-slider/2.svg" alt="">
+                                            </div>
+                                            <div class="academy-schedule__slider-card-date">
+                                                29 июля 2025
+                                            </div>
+                                            <div class="academy-schedule__slider-card-city">
+                                                г. Пятигорск
+                                            </div>
+                                            <div
+                                                class="academy-schedule__slider-card-link academy-schedule__slider-card-link--disabled">
+                                                Завершено
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9"
+                                                    viewBox="0 0 9 9">
+                                                    <path
+                                                        d="M8.74994 6.59961C8.74994 7.01382 8.41416 7.34961 7.99994 7.34961C7.58573 7.34961 7.24994 7.01382 7.24994 6.59961V2.81055L1.53022 8.53027C1.23732 8.82317 0.762563 8.82317 0.46967 8.53027C0.176777 8.23738 0.176777 7.76262 0.46967 7.46973L6.1894 1.75H2.40033C1.98612 1.75 1.65033 1.41421 1.65033 1C1.65033 0.585786 1.98612 0.25 2.40033 0.25H7.99994C8.41416 0.25 8.74994 0.585786 8.74994 1V6.59961Z" />
+                                                </svg>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="academy-schedule">
-                    <div class="page__center">
-                        <h2 class="academy-schedule__heading">
-                            Расписание выездных семинаров
-                        </h2>
-                        <div class="academy-schedule__card">
-                            <div class="academy-schedule__card-bg">
-                                <picture>
-                                    <source srcset="img/academy-schedule/bg-mobile.webp"
-                                        media="(max-width: 599.98px)" />
-                                    <img src="img/academy-schedule/bg.webp" alt="">
-                                </picture>
-                            </div>
-                            <h3 class="academy-schedule__card-title">
-                                Программа обучения
-                            </h3>
-                            <div class="academy-schedule__card-large-text">
-                                Профессиональный подход к обслуживанию системы кондиционирования
-                            </div>
-                            <div class="academy-schedule__card-small-text">
-                                Лекции и семинары проходят в оборудованных залах с использованием учебного автомобиля
-                                LUZAR в группах по 15-20 человек. Участники получают именной сертификат подтверждающий
-                                повышение квалификации.
-                            </div>
-                            <div class="academy-schedule__card-remark">
-
-                                Оставьте заявку с вами свяжется региональный представителей LUZAR в вашем городе
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer class="footer" id="footer">
-                <div class="page__center">
-                    <div class="footer__center">
-                        <div class="footer__left">
-                            <div class="footer__col-about">
-                                <div class="footer__logo">
-                                    <div class="card-image" style="padding-top: 28%"> <img src="img/logo--white.svg"
-                                            alt="" /></div>
-                                </div>
-                            </div>
-                            <div class="footer__col-contacts"> <a href="#" class="footer__phone"><svg class="icon">
-                                        <use xlink:href="img/sprite-icons.svg#phone"></use>
-                                    </svg><span>8 800 555-89-65</span></a>
-                                <div class="footer__social">
-                                    <nav class="nav-social"> <a href="#"><svg class="icon">
-                                                <use xlink:href="img/sprite-social.svg#vk"></use>
-                                            </svg></a> <a href="#"><svg class="icon">
-                                                <use xlink:href="img/sprite-social.svg#youtube"></use>
-                                            </svg></a> <a href="#"><svg class="icon">
-                                                <use xlink:href="img/sprite-social.svg#r"></use>
-                                            </svg></a> <a href="#"><svg class="icon">
-                                                <use xlink:href="img/sprite-social.svg#d2"></use>
-                                            </svg></a> <a href="#"><svg class="icon">
-                                                <use xlink:href="img/sprite-social.svg#telegram"></use>
-                                            </svg></a></nav>
-                                </div>
-                            </div>
-                            <div class="footer__col-info">
-                                <nav class="footer__nav">
-                                    <ul>
-                                        <li><a href="#">Пользовательское соглашение</a></li>
-                                        <li><a href="#">Проверка совместимости</a></li>
-                                    </ul>
-                                </nav>
-                                <div class="footer__tecdoc">
-                                    <div class="footer__tecdoc__logo">
-                                        <div class="card-image" style="padding-top: 24.36%"> <img
-                                                src="img/logo-tecdoc--white.png" alt="" /></div>
-                                    </div>
-                                    <div class="footer__tecdoc__desc"> Компания LUZAR включена<br />в базу данных
-                                        каталога запчастей TecDoc</div>
-                                </div>
                             </div>
                         </div>
-                        <div class="footer__right">
-                            <div class="footer__year">
-                                <div class="card-image" style="padding-top: 93.45%"> <img src="img/20-years.svg"
+                        <button class="academy-schedule__slider-arrow academy-schedule__slider-arrow--next">
+                            <svg width="32" height="32" viewBox="0 0 32 32">
+                                <path
+                                    d="M13.701 10.1932C14.0967 9.80824 14.7299 9.81713 15.1151 10.2127L20.6122 15.8592L15.0956 21.2264C14.6997 21.6115 14.0666 21.6027 13.6815 21.2069C13.2966 20.811 13.3053 20.1778 13.701 19.7928L17.784 15.8192L13.6815 11.6072C13.2965 11.2115 13.3054 10.5784 13.701 10.1932Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="page__center">
+                <div class="footer__center">
+                    <div class="footer__left">
+                        <div class="footer__col-about">
+                            <div class="footer__logo">
+                                <div class="card-image" style="padding-top: 28%"> <img src="img/logo--white.svg"
                                         alt="" /></div>
                             </div>
                         </div>
+                        <div class="footer__col-contacts"> <a href="#" class="footer__phone"><svg class="icon">
+                                    <use xlink:href="img/sprite-icons.svg#phone"></use>
+                                </svg><span>8 800 555-89-65</span></a>
+                            <div class="footer__social">
+                                <nav class="nav-social"> <a href="#"><svg class="icon">
+                                            <use xlink:href="img/sprite-social.svg#vk"></use>
+                                        </svg></a> <a href="#"><svg class="icon">
+                                            <use xlink:href="img/sprite-social.svg#youtube"></use>
+                                        </svg></a> <a href="#"><svg class="icon">
+                                            <use xlink:href="img/sprite-social.svg#r"></use>
+                                        </svg></a> <a href="#"><svg class="icon">
+                                            <use xlink:href="img/sprite-social.svg#d2"></use>
+                                        </svg></a> <a href="#"><svg class="icon">
+                                            <use xlink:href="img/sprite-social.svg#telegram"></use>
+                                        </svg></a></nav>
+                            </div>
+                        </div>
+                        <div class="footer__col-info">
+                            <nav class="footer__nav">
+                                <ul>
+                                    <li><a href="#">Пользовательское соглашение</a></li>
+                                    <li><a href="#">Проверка совместимости</a></li>
+                                </ul>
+                            </nav>
+                            <div class="footer__tecdoc">
+                                <div class="footer__tecdoc__logo">
+                                    <div class="card-image" style="padding-top: 24.36%"> <img
+                                            src="img/logo-tecdoc--white.png" alt="" /></div>
+                                </div>
+                                <div class="footer__tecdoc__desc"> Компания LUZAR включена<br />в базу данных
+                                    каталога запчастей TecDoc</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="footer__desc"> 2023 © ООО "ЭРЛАЙН".<br />Производитель автозапчастей и
-                        автоаксессуаров.<br />Все права защищены. Реализация в РФ и СНГ.</div>
+                    <div class="footer__right">
+                        <div class="footer__year">
+                            <div class="card-image" style="padding-top: 93.45%"> <img src="img/20-years.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </footer>
-            <nav class="nav-burger" id="nav-burger">
-                <div class="page__center">
-                    <div class="nav-burger__group">
-                        <ul>
-                            <li> <a href="#"><span>Каталог</span><svg class="icon flip-x">
-                                        <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
-                                    </svg></a></li>
-                            <li> <a href="#"><span>Точки продаж</span><svg class="icon flip-x">
-                                        <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
-                                    </svg></a></li>
-                            <li> <a href="#"><span>Поиск по автомобилям</span><svg class="icon flip-x">
-                                        <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
-                                    </svg></a></li>
-                            <li> <a href="#"><span>Гарантия и возврат</span><svg class="icon flip-x">
-                                        <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
-                                    </svg></a></li>
-                            <li> <a href="#"><span>Прайс</span><svg class="icon flip-x">
-                                        <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
-                                    </svg></a></li>
-                        </ul>
-                    </div>
-                    <div class="nav-burger__group">
-                        <ul>
-                            <li><a href="#">Материалы</a></li>
-                            <li><a href="#">Контакты</a></li>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Вопрос/ответ</a></li>
-                        </ul>
-                    </div>
+                <div class="footer__desc"> 2023 © ООО "ЭРЛАЙН".<br />Производитель автозапчастей и
+                    автоаксессуаров.<br />Все права защищены. Реализация в РФ и СНГ.</div>
+            </div>
+        </footer>
+        <nav class="nav-burger" id="nav-burger">
+            <div class="page__center">
+                <div class="nav-burger__group">
+                    <ul>
+                        <li> <a href="#"><span>Каталог</span><svg class="icon flip-x">
+                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                </svg></a></li>
+                        <li> <a href="#"><span>Точки продаж</span><svg class="icon flip-x">
+                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                </svg></a></li>
+                        <li> <a href="#"><span>Поиск по автомобилям</span><svg class="icon flip-x">
+                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                </svg></a></li>
+                        <li> <a href="#"><span>Гарантия и возврат</span><svg class="icon flip-x">
+                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                </svg></a></li>
+                        <li> <a href="#"><span>Прайс</span><svg class="icon flip-x">
+                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                </svg></a></li>
+                    </ul>
                 </div>
-            </nav>
-            <aside class="popup-ask mfp-with-anim mfp-hide" id="popup-ask">
-                <h2 class="popup-ask__title">Запрос по VIN</h2>
-                <form action="#" class="form-default">
-                    <div class="form-default__item"> <label class="form-default__label">ФИО <span>*</span></label>
-                        <div class="input-default"> <input type="text" /></div>
-                    </div>
-                    <div class="form-default__item"> <label class="form-default__label">VIN <span>*</span></label>
-                        <div class="input-default"> <input type="text" /></div>
-                    </div>
-                    <div class="form-default__item"> <label class="form-default__label">Марка\модель
-                            <span>*</span></label>
-                        <div class="input-default"> <input type="text" /></div>
-                    </div>
-                    <div class="form-default__item"> <label class="form-default__label">E-mail <span>*</span></label>
-                        <div class="input-default"> <input type="text" /></div>
-                    </div>
-                    <div class="form-default__item"> <label class="form-default__label">Телефон <span>*</span></label>
-                        <div class="input-default"> <input type="text" /></div>
-                    </div>
-                    <div class="form-default__item"> <label class="form-default__label">Интересующие запчасти
-                            <span>*</span></label>
-                        <div class="input-default"> <input type="text" /></div>
-                    </div>
-                    <div class="form-default__btns"> <button class="btn btn-filled">Отправить</button></div>
-                </form>
-            </aside>
-            <aside class="popup-markets mfp-with-anim mfp-hide" id="popup-markets">
-                <div class="popup-markets__header">
-                    <h2 class="popup-markets__title">Маркетплейсы</h2>
-                    <div class="popup-markets__region">Россия</div>
+                <div class="nav-burger__group">
+                    <ul>
+                        <li><a href="#">Материалы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Вопрос/ответ</a></li>
+                    </ul>
                 </div>
-                <table class="table-markets">
-                    <tr>
-                        <th>Наименование</th>
-                        <th>Сайт</th>
-                    </tr>
-                    <tr>
-                        <td>OZON</td>
-                        <td><a href="#">Перейти</a></td>
-                    </tr>
-                    <tr>
-                        <td>WILDBERRIS</td>
-                        <td><a href="#">Перейти</a></td>
-                    </tr>
-                    <tr>
-                        <td>ЯНДЕКС МАРКЕТ</td>
-                        <td><a href="#">Перейти</a></td>
-                    </tr>
-                    <tr>
-                        <td>ОНЛАЙН ТРЕЙД.РУ</td>
-                        <td><a href="#">Перейти</a></td>
-                    </tr>
-                    <tr>
-                        <td>ВсеИнструмены.ру</td>
-                        <td><a href="#">Перейти</a></td>
-                    </tr>
-                    <tr>
-                        <td>СБЕР МЕГАМАРКЕТ</td>
-                        <td><a href="#">Перейти</a></td>
-                    </tr>
-                    <tr>
-                        <td>enex.market</td>
-                        <td><a href="#">Перейти</a></td>
-                    </tr>
-                </table>
-            </aside>
-        </div>
-        <script src="js/vendor/modernizr.js?t=1687285106262"></script>
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/jquery-custom-select@1.6.4/dist/js/jquery.custom-select.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-        <script src="js/main.min.js?t=1687285106262"></script>
-        <div id="notify" class="notify"></div>
-        <link rel="stylesheet" href="https://ildar-meyker.ru/libs/pagelist/css/pagelist.min.css" />
-        <script src="https://ildar-meyker.ru/libs/pagelist/js/pagelist.min.js"></script>
-    </body>
+            </div>
+        </nav>
+        <aside class="popup-ask mfp-with-anim mfp-hide" id="popup-ask">
+            <h2 class="popup-ask__title">Запрос по VIN</h2>
+            <form action="#" class="form-default">
+                <div class="form-default__item"> <label class="form-default__label">ФИО <span>*</span></label>
+                    <div class="input-default"> <input type="text" /></div>
+                </div>
+                <div class="form-default__item"> <label class="form-default__label">VIN <span>*</span></label>
+                    <div class="input-default"> <input type="text" /></div>
+                </div>
+                <div class="form-default__item"> <label class="form-default__label">Марка\модель
+                        <span>*</span></label>
+                    <div class="input-default"> <input type="text" /></div>
+                </div>
+                <div class="form-default__item"> <label class="form-default__label">E-mail <span>*</span></label>
+                    <div class="input-default"> <input type="text" /></div>
+                </div>
+                <div class="form-default__item"> <label class="form-default__label">Телефон <span>*</span></label>
+                    <div class="input-default"> <input type="text" /></div>
+                </div>
+                <div class="form-default__item"> <label class="form-default__label">Интересующие запчасти
+                        <span>*</span></label>
+                    <div class="input-default"> <input type="text" /></div>
+                </div>
+                <div class="form-default__btns"> <button class="btn btn-filled">Отправить</button></div>
+            </form>
+        </aside>
+        <aside class="popup-markets mfp-with-anim mfp-hide" id="popup-markets">
+            <div class="popup-markets__header">
+                <h2 class="popup-markets__title">Маркетплейсы</h2>
+                <div class="popup-markets__region">Россия</div>
+            </div>
+            <table class="table-markets">
+                <tr>
+                    <th>Наименование</th>
+                    <th>Сайт</th>
+                </tr>
+                <tr>
+                    <td>OZON</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+                <tr>
+                    <td>WILDBERRIS</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+                <tr>
+                    <td>ЯНДЕКС МАРКЕТ</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+                <tr>
+                    <td>ОНЛАЙН ТРЕЙД.РУ</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+                <tr>
+                    <td>ВсеИнструмены.ру</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+                <tr>
+                    <td>СБЕР МЕГАМАРКЕТ</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+                <tr>
+                    <td>enex.market</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+            </table>
+        </aside>
+    </div>
+    <script src="js/vendor/modernizr.js?t=1687285106262"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-custom-select@1.6.4/dist/js/jquery.custom-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js?t=1687285106262"></script>
+    <div id="notify" class="notify"></div>
+    <link rel="stylesheet" href="https://ildar-meyker.ru/libs/pagelist/css/pagelist.min.css" />
+    <script src="https://ildar-meyker.ru/libs/pagelist/js/pagelist.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/academy.js"></script>
+</body>
 
 </html>

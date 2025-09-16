@@ -42,4 +42,21 @@ document.addEventListener("DOMContentLoaded", () => {
       filtersDropdown.classList.remove("active");
     });
   }
+
+  const scheduleSliders = Array.from(
+    document.querySelectorAll(".academy-schedule__slider")
+  );
+  scheduleSliders.forEach((slider) => {
+    console.log("Slider");
+    const container = slider.querySelector(".swiper");
+    new Swiper(container, {
+      slidesPerView: "auto",
+      // spaceBetween: 16,
+      speed: 500,
+      navigation: {
+        prevEl: slider.querySelector(".academy-schedule__slider-arrow--prev"),
+        nextEl: slider.querySelector(".academy-schedule__slider-arrow--next"),
+      },
+    });
+  });
 });
