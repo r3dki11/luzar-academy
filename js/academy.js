@@ -17,4 +17,29 @@ document.addEventListener("DOMContentLoaded", () => {
       };
     });
   });
+
+  const filtersMobileToggle = document.querySelector(
+    ".library__filters-form-mobile-toggle"
+  );
+  const filtersDropdown = document.querySelector(
+    ".library__filters-form-modal"
+  );
+  const filtersCloseBtn = document.querySelector(
+    ".library__filters-form-modal-close"
+  );
+
+  if (filtersMobileToggle && filtersDropdown && filtersCloseBtn) {
+    filtersMobileToggle.addEventListener("click", (event) => {
+      event.preventDefault();
+      filtersDropdown.classList.toggle("active");
+    });
+    filtersDropdown.addEventListener("click", (event) => {
+      if (event.target === filtersDropdown)
+        filtersDropdown.classList.remove("active");
+    });
+    filtersCloseBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+      filtersDropdown.classList.remove("active");
+    });
+  }
 });
