@@ -59,4 +59,14 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   });
+
+  const burgerAccordionBtns = Array.from(
+    document.querySelectorAll("button.nav-burger__link")
+  );
+  burgerAccordionBtns.forEach((btn) =>
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      btn.parentElement.classList.toggle("active");
+    })
+  );
 });

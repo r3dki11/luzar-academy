@@ -5,12 +5,13 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Главная</title>
+    <!-- <title>Главная</title>
     <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css" />
     <link href="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.css" rel="stylesheet" />
     <link href="css/main.min.css?t=1687285106262" rel="stylesheet" />
-    <link href="css/fix-vendors.min.css?t=1687285106262" rel="stylesheet" />
+    <link href="css/fix-vendors.min.css?t=1687285106262" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="css/template.css">
     <link href="css/academy.css" rel="stylesheet" />
 </head>
 
@@ -20,31 +21,192 @@
             <div class="page__center">
                 <div class="header__center">
                     <div class="header__logo">
-                        <div class="card-image" style="padding-top: 28%"> <img src="img/logo.svg" alt="" /></div>
+                        <a href="/" class="card-image" style="padding-top: 28%"><img src="img/logo.svg" alt="" /></a>
                     </div>
+                    <div id="bxdynamic_LkGdQn_start" style="display:none"></div>
+                    <div class="header__catalog">
+                        <a href="/catalogue/" class="btn btn-filled">Каталог</a>
+                    </div>
+
                     <div class="header__nav">
                         <nav class="header__nav__group">
                             <ul>
-                                <li><a href="points.html">Точки продаж</a></li>
-                                <li><a href="#">Прайс</a></li>
-                                <li><a href="contacts.html">Контакты</a></li>
-                                <li><a href="faq.html">Вопрос/ответ</a></li>
-                                <li><a href="#">Запрос по VIN</a></li>
+                                <li><a href="/news/">Новости</a></li>
+                                <li><a href="/about/">О компании</a></li>
+                                <li><a href="/where-buy/">Точки продаж</a></li>
+                                <li><a href="/about/garantiynye-obyazatelstva/">Гарантия</a></li>
+                                <li><a href="/materials/">Материалы</a></li>
+                                <li><a href="/academy/">Академия</a>
+                                    <div class="header__submenu-dropdown">
+                                        <div class="header__submenu-dropdown-inner">
+                                            <div class="header__submenu-dropdown-links">
+                                                <a href="#" class="header__submenu-dropdown-link">
+                                                    Академия LUZAR
+                                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M8.82122 6.46294C9.11791 6.17406 9.59278 6.18008 9.88177 6.47661L15.4052 12.1495L9.86809 17.5372C9.57136 17.8259 9.09644 17.8199 8.80755 17.5235C8.51883 17.2268 8.52477 16.7518 8.82122 16.4629L13.2831 12.1202L8.80755 7.52349C8.51866 7.2268 8.52468 6.75193 8.82122 6.46294Z" />
+                                                    </svg>
+                                                </a>
+                                                <a href="#" class="header__submenu-dropdown-link">
+                                                    Обучающая библиотека
+                                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                                        <path
+                                                            d="M8.82122 6.46294C9.11791 6.17406 9.59278 6.18008 9.88177 6.47661L15.4052 12.1495L9.86809 17.5372C9.57136 17.8259 9.09644 17.8199 8.80755 17.5235C8.51883 17.2268 8.52477 16.7518 8.82122 16.4629L13.2831 12.1202L8.80755 7.52349C8.51866 7.2268 8.52468 6.75193 8.82122 6.46294Z" />
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li><a href="/contacts/">Контакты</a></li>
                             </ul>
                         </nav>
-                        <nav class="header__nav__group">
+                        <!-- <nav class="header__nav__group">
                             <ul>
-                                <li><a href="rules.html">Гарантия</a></li>
-                                <li><a href="#">Поиск по авто</a></li>
                             </ul>
-                        </nav>
+                        </nav> -->
                     </div>
-                    <div class="header__star"> <button class="btn btn-favorite btn-favorite--header"><svg class="icon">
+
+                    <div class="header__new_find">
+                        <span class="btn btn-new-find-top js-find-top">
+                            <svg class="icon">
+                                <use xlink:href="img/sprite-icons.svg#search"></use>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="header__star">
+                        <a href="/favorites/" class="btn btn-favorite btn-favorite--header">
+                            <svg class="icon">
                                 <use xlink:href="img/sprite-icons.svg#star"></use>
-                            </svg></button></div>
-                    <div class="header__catalog"> <button class="btn btn-filled">Каталог</button></div>
-                    <div class="header__burger"> <button
-                            class="btn-burger js-nav-burger-btn"><span></span><span></span><span></span></button>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="header__burger">
+                        <button class="btn-burger js-nav-burger-btn"><span></span><span></span><span></span></button>
+                    </div>
+                    <div id="bxdynamic_LkGdQn_end" style="display:none"></div>
+                    <div class="main-search-panel__dropdown">
+                        <div class="form-search">
+                            <div class="form-search__mobile">
+                                <div class="form-search__mobile__label"> Поиск по названию или артикулу и ОЕМ</div>
+                                <div class="form-search__mobile__input">
+                                    <div class="input-search" id="top-title-search-mob">
+                                        <form action="/catalogue/">
+                                            <input id="top-title-search-input-mob" type="text" name="q" required
+                                                value='' size="40" maxlength="50" autocomplete="off"
+                                                placeholder="Я ищу" />
+                                            <button name="s" type="submit" value="Поиск" class="new-find-search-btn 2">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite-icons.svg#search">
+                                                    </use>
+                                                </svg>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-search__desktop ">
+                                <div class="form-search__desktop__input reqs-vin-btn-block">
+                                    <div class="input-search" id="top-title-search">
+                                        <form action="/catalogue/">
+                                            <input id="top-title-search-input" type="text" name="q" required value=''
+                                                size="40" maxlength="50" autocomplete="off"
+                                                placeholder="Поиск по названию или артикулу и ОЕМ" />
+                                            <button name="s" type="submit" value="Поиск" class="new-find-search-btn 2">
+                                                <svg class="icon">
+                                                    <use xlink:href="img/sprite-icons.svg#search">
+                                                    </use>
+                                                </svg>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <a href="#popup-ask" class="reqs-vin-btn js-popup-open"
+                                        data-effect="mfp-move-horizontal">Запрос по VIN</a>
+                                </div>
+                                <div class="form-search__desktop__label"> Подобрать запчасти к автомобилю</div>
+                            </div>
+                            <div class="form-search__filter">
+                                <div class="form-search__filter__btn-toggle d-md-none">
+                                    <button class="btn btn-expand w-100 js-collapse-btn"
+                                        data-target="#form-search__filter__collapse_top">
+                                        <span>Фильтры по автомобилям</span>
+                                        <svg class="icon">
+                                            <use xlink:href="img/sprite-icons.svg#arrow-right">
+                                            </use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="form-search__filter__collapse collapse d-md-block"
+                                    id="form-search__filter__collapse_top">
+
+                                    <div class="form-search-catalog__filter 22" id="formCar6578">
+                                        <div class="form-search-catalog__select all-category-select-block">
+                                            <select name="category" class="select-default js-custom-select-car-all">
+                                                <option value="0">
+                                                    Категория </option>
+                                                <option value="977" data-url="/catalogue/radiatory/">Радиаторы</option>
+                                                <option value="2175" data-url="/catalogue/nasosy-vodyanye/">Насосы
+                                                    водяные</option>
+                                                <option value="1057" data-url="/catalogue/elektroventilyatory/">
+                                                    Вентиляторы</option>
+                                                <option value="966" data-url="/catalogue/termostaty/">Термостаты
+                                                </option>
+                                                <option value="2174" data-url="/catalogue/kso/">Компоненты системы
+                                                    охлаждения</option>
+                                                <option value="2179" data-url="/catalogue/komkon/">Компрессоры
+                                                    кондиционера</option>
+                                                <option value="2180"
+                                                    data-url="/catalogue/komponenty-sistemy-konditsionirovaniya/">
+                                                    Компоненты системы кондиционирования</option>
+                                                <option value="2181" data-url="/catalogue/kompr-vozd/">Компрессоры
+                                                    воздушные</option>
+                                                <option value="2183" data-url="/catalogue/nasosy-gidravlicheskie/">
+                                                    Насосы гидравлические</option>
+                                                <option value="1166" data-url="/catalogue/turbokompressory/">
+                                                    Турбокомпрессоры</option>
+                                                <option value="2184" data-url="/catalogue/prokladki-dvigatelya/">
+                                                    Прокладки двигателя</option>
+                                                <option value="2185" data-url="/catalogue/detali-dvigatelya/">Детали
+                                                    двигателя</option>
+                                                <option value="2144" data-url="/catalogue/soputstvuyushchie-tovary/">
+                                                    Сопутствующие товары</option>
+                                                <option value="2121" data-url="/catalogue/suvenirnaya-produktsiya/">
+                                                    Сувенирная продукция</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-search-catalog__select all-mark-select-block">
+                                            <select name="mark" class="select-default js-custom-select-car-all">
+                                                <option value="0">
+                                                    Марка </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-search-catalog__select all-model-select-block">
+                                            <select name="model" class="select-default js-custom-select-car-all">
+                                                <option value="0">
+                                                    Модель </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-search-catalog__select all-engine-select-block">
+                                            <select name="engine" class="select-default js-custom-select-car-all">
+                                                <option value="0">
+                                                    Модификация </option>
+                                            </select>
+                                        </div>
+                                        <div class="form-search-catalog__button">
+                                            <button class="btn btn-filled text-uppercase js-active-filter-all 123">
+                                                Найти</button>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -513,32 +675,99 @@
         </footer>
         <nav class="nav-burger" id="nav-burger">
             <div class="page__center">
-                <div class="nav-burger__group">
-                    <ul>
-                        <li> <a href="#"><span>Каталог</span><svg class="icon flip-x">
-                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
-                                </svg></a></li>
-                        <li> <a href="#"><span>Точки продаж</span><svg class="icon flip-x">
-                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
-                                </svg></a></li>
-                        <li> <a href="#"><span>Поиск по автомобилям</span><svg class="icon flip-x">
-                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
-                                </svg></a></li>
-                        <li> <a href="#"><span>Гарантия и возврат</span><svg class="icon flip-x">
-                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
-                                </svg></a></li>
-                        <li> <a href="#"><span>Прайс</span><svg class="icon flip-x">
-                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
-                                </svg></a></li>
+                <ul class="nav-burger__list">
+                    <li class="nav-burger__list-item">
+                        <a href="#" class="nav-burger__link">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="nav-burger__list-item">
+                        <a href="#" class="nav-burger__link">
+                            Точки продаж
+                        </a>
+                    </li>
+                    <li class="nav-burger__list-item">
+                        <button class="nav-burger__link" type="button">
+                            Академия
+                            <svg width="14" height="8" viewBox="0 0 14 8">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M7.70734 7.70721C7.51981 7.89468 7.26551 8 7.00034 8C6.73518 8 6.48087 7.89468 6.29334 7.70721L0.636343 2.05021C0.540833 1.95797 0.464651 1.84762 0.412242 1.72562C0.359833 1.60361 0.332246 1.47239 0.331093 1.33961C0.329939 1.20684 0.355241 1.07516 0.405522 0.95226C0.455802 0.829364 0.530056 0.717711 0.623948 0.623818C0.717841 0.529926 0.829493 0.455673 0.952389 0.405392C1.07529 0.355111 1.20697 0.329809 1.33974 0.330963C1.47252 0.332117 1.60374 0.359703 1.72575 0.412112C1.84775 0.464521 1.9581 0.540703 2.05034 0.636213L7.00034 5.58621L11.9503 0.636213C12.1389 0.454055 12.3915 0.353261 12.6537 0.355539C12.9159 0.357818 13.1668 0.462987 13.3522 0.648395C13.5376 0.833803 13.6427 1.08462 13.645 1.34681C13.6473 1.60901 13.5465 1.86161 13.3643 2.05021L7.70734 7.70721Z" />
+                            </svg>
+                        </button>
+                        <div class="nav-burger__dropdown">
+                            <div class="nav-burger__dropdown-inner">
+                                <div class="nav-burger__dropdown-links">
+                                    <a href="#" class="nav-burger__dropdown-link">
+                                        Академия LUZAR
+                                    </a>
+                                    <a href="#" class="nav-burger__dropdown-link">
+                                        Обучающая библиотека
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-burger__list-item">
+                        <a href="#" class="nav-burger__link">
+                            Гарантия
+                        </a>
+                    </li>
+                    <li class="nav-burger__list-item">
+                        <a href="#" class="nav-burger__link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="nav-burger__list-item">
+                        <a href="#" class="nav-burger__link">
+                            Материалы
+                        </a>
+                    </li>
+                    <li class="nav-burger__list-item">
+                        <a href="#" class="nav-burger__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-burger__bottom">
+                    <a href="tel:+78005558965" class="nav-burger__phone">8 800 555 89 65</a>
+                    <ul class="nav-burger__social-list">
+                        <li class="nav-burger__social-list-item">
+                            <a href="#" class="nav-burger__social-link">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite-social.svg#vk"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-burger__social-list-item">
+                            <a href="#" class="nav-burger__social-link">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite-social.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-burger__social-list-item">
+                            <a href="#" class="nav-burger__social-link">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite-social.svg#r"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-burger__social-list-item">
+                            <a href="#" class="nav-burger__social-link">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite-social.svg#d2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="nav-burger__social-list-item">
+                            <a href="#" class="nav-burger__social-link">
+                                <svg class="icon">
+                                    <use xlink:href="img/sprite-social.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </div>
-                <div class="nav-burger__group">
-                    <ul>
-                        <li><a href="#">Материалы</a></li>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">О компании</a></li>
-                        <li><a href="#">Вопрос/ответ</a></li>
-                    </ul>
+                    <a href="mailto:mail@luzar.ru" class="nav-burger__email">mail@luzar.ru</a>
                 </div>
             </div>
         </nav>
@@ -609,16 +838,22 @@
             </table>
         </aside>
     </div>
-    <script src="js/vendor/modernizr.js?t=1687285106262"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-custom-select@1.6.4/dist/js/jquery.custom-select.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/main.min.js?t=1687285106262"></script>
-    <div id="notify" class="notify"></div>
-    <link rel="stylesheet" href="https://ildar-meyker.ru/libs/pagelist/css/pagelist.min.css" />
-    <script src="https://ildar-meyker.ru/libs/pagelist/js/pagelist.min.js"></script>
+    <script type="text/javascript"
+        src="https://luzar.ru/local/templates/luzar/js/vendor/modernizr.js?16872847685378"></script>
+    <script type="text/javascript"
+        src="https://luzar.ru/local/templates/luzar/npm/jquery.min.js?171463006787462"></script>
+    <script type="text/javascript"
+        src="https://luzar.ru/local/templates/luzar/npm/jquery.custom-select.min.js?17146300958438"></script>
+    <script type="text/javascript"
+        src="https://luzar.ru/local/templates/luzar/npm/simplebar.min.js?171462999427057"></script>
+    <script type="text/javascript"
+        src="https://luzar.ru/local/templates/luzar/npm/jquery.magnific-popup.min.js?171462974920216"></script>
+    <script type="text/javascript"
+        src="https://luzar.ru/local/templates/luzar/npm/swiper-bundle.min.js?1714629540135403"></script>
+    <script type="text/javascript" src="https://luzar.ru/local/templates/luzar/js/main.js?172907042458727"></script>
+    <script type="text/javascript"
+        src="https://luzar.ru/local/templates/luzar/js/bootstrap.min.js?142648453035951"></script>
+    <script type="text/javascript" src="https://luzar.ru/local/templates/luzar/js/custom.js?174305741027219"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
         integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
