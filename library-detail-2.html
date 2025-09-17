@@ -104,11 +104,9 @@
                                     можете посмотреть в видео ниже:
                                 </p>
 
-                                <iframe
-                                    src="https://vkvideo.ru/video_ext.php?oid=-31350907&id=456239096&hd=2&autoplay=1"
-                                    width="853" height="480" style="background-color: #000"
-                                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-                                    frameborder="0" allowfullscreen></iframe>
+
+                                <iframe id="iframe" src="https://vkvideo.ru/video_ext.php?oid=-31350907&id=456239096&hd=2&autoplay=1&js_api=1"
+                                        width="853" height="480" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
 
                                 <h2>
                                     Как промыть систему кондиционирования автомобиля?
@@ -116,7 +114,7 @@
                                 <ul class="timecodes__list">
                                     <li class="timecodes__list-item">
                                         <div class="timecodes__card">
-                                            <div class="timecodes__card-title">
+                                            <div class="timecodes__card-title" data-video-time="100">
                                                 00:00 Введение и проблема
                                             </div>
                                             <div class="timecodes__card-desc">
@@ -138,7 +136,7 @@
                                     </li>
                                     <li class="timecodes__list-item">
                                         <div class="timecodes__card">
-                                            <div class="timecodes__card-title">
+                                            <div class="timecodes__card-title" data-video-time="200">
                                                 00:52 Регламент и замена компонентов
                                             </div>
                                             <div class="timecodes__card-desc">
@@ -159,7 +157,7 @@
                                     </li>
                                     <li class="timecodes__list-item">
                                         <div class="timecodes__card">
-                                            <div class="timecodes__card-title">
+                                            <div class="timecodes__card-title" data-video-time="300">
                                                 01:45 Подготовка к промывке
                                             </div>
                                             <div class="timecodes__card-desc">
@@ -179,7 +177,7 @@
                                     </li>
                                     <li class="timecodes__list-item">
                                         <div class="timecodes__card">
-                                            <div class="timecodes__card-title">
+                                            <div class="timecodes__card-title" data-video-time="400">
                                                 02:17 Процесс промывки
                                             </div>
                                             <div class="timecodes__card-desc">
@@ -205,7 +203,7 @@
                                     </li>
                                     <li class="timecodes__list-item">
                                         <div class="timecodes__card">
-                                            <div class="timecodes__card-title">
+                                            <div class="timecodes__card-title" data-video-time="500">
                                                 04:02 Проверка и слив
                                             </div>
                                             <div class="timecodes__card-desc">
@@ -230,7 +228,7 @@
                                     </li>
                                     <li class="timecodes__list-item">
                                         <div class="timecodes__card">
-                                            <div class="timecodes__card-title">
+                                            <div class="timecodes__card-title" data-video-time="600">
                                                 05:48 Завершение и заправка
                                             </div>
                                             <div class="timecodes__card-desc">
@@ -256,6 +254,28 @@
                                         </div>
                                     </li>
                                 </ul>
+
+                                <script src="https://vk.com/js/api/videoplayer.js"></script>
+                                <script>
+                                    const videoTimes = Array.from(
+                                        document.querySelectorAll('[data-video-time]')
+                                    );
+                                    videoTimes.forEach((btn) =>
+                                        btn.addEventListener("click", (event) => {
+                                            event.preventDefault();
+                                            const player = VK.VideoPlayer(iframe);
+                                            const time = btn.getAttribute('data-video-time');
+
+                                            const targetElement = document.getElementById('iframe');
+                                            targetElement.scrollIntoView({
+                                                behavior: 'smooth',
+                                                block: 'start'
+                                            });
+
+                                            player.seek(time);
+                                        })
+                                    );
+                                </script>
                             </div>
                             <div class="library-detail__controls">
                                 <div class="panel-tools__share">

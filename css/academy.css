@@ -9,7 +9,7 @@
 
 @media (max-width: 599.98px) {
   .academy-intro {
-    padding-top: 1rem;
+    padding-top: 0.6rem;
     margin-bottom: 2.4rem;
   }
 }
@@ -60,6 +60,10 @@ picture {
 }
 
 @media (max-width: 599.98px) {
+  .academy-intro__card-bg {
+    margin-bottom: 8px;
+  }
+
   .academy-intro__title-wrapper {
     margin-left: -1.6rem;
     margin-bottom: 2.4rem;
@@ -410,6 +414,10 @@ picture {
   min-height: 21.6rem;
 }
 
+.academy-formats__card:hover .academy-formats__card-arrow-inner {
+  background: #00205c;
+}
+
 .academy-formats__card::before {
   content: "";
   background-color: #fff;
@@ -671,7 +679,7 @@ picture {
 }
 
 .academy-schedule__card-remark {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
@@ -703,7 +711,6 @@ picture {
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
-  text-transform: uppercase;
   margin-bottom: 4.5rem;
   color: #1a1919;
 }
@@ -720,7 +727,6 @@ picture {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    text-transform: uppercase;
     margin-bottom: 2.4rem;
   }
 }
@@ -730,7 +736,7 @@ picture {
   align-items: center;
   gap: 2rem;
   justify-content: space-between;
-  margin-bottom: 2.4rem;
+  margin-bottom: 4rem;
 }
 
 .library__top-row .library__heading {
@@ -1176,6 +1182,8 @@ picture {
   user-select: none;
   transition: all 0.2s;
 }
+
+form.active .library__filters-form-reset,
 .library__filters-form-reset:hover {
   background-color: #204a8f;
   color: white;
@@ -1448,7 +1456,6 @@ picture {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  text-transform: uppercase;
   text-wrap: balance;
   margin-bottom: 2.6rem;
 }
@@ -1459,7 +1466,6 @@ picture {
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
-    text-transform: uppercase;
     margin-bottom: 2.4rem;
   }
 }
@@ -1469,7 +1475,6 @@ picture {
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
-    text-transform: uppercase;
     margin-bottom: 2.4rem;
   }
 }
@@ -2082,6 +2087,10 @@ picture {
   font-weight: 500;
   line-height: 130%;
   color: #204a8f;
+}
+
+.timecodes__card-title[data-video-time] {
+  cursor: pointer;
 }
 
 .timecodes__card-desc {

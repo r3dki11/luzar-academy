@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".academy-schedule__slider")
   );
   scheduleSliders.forEach((slider) => {
-    console.log("Slider");
     const container = slider.querySelector(".swiper");
     new Swiper(container, {
       slidesPerView: "auto",
@@ -68,5 +67,51 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault();
       btn.parentElement.classList.toggle("active");
     })
+  );
+
+  const scrollToBtns = Array.from(
+    document.querySelectorAll('[href^="#scroll-"]')
+  );
+  scrollToBtns.forEach((btn) =>
+    btn.addEventListener("click", (event) => {
+      event.preventDefault();
+      const target = btn.getAttribute('href').substring(1);
+
+      const targetElement = document.getElementById(target);
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+
+    })
+  );
+
+  const formCheckboxes = Array.from(
+      document.querySelectorAll('.library__filters-form input[type="checkbox"]')
+  );
+  formCheckboxes.forEach((btn) =>
+      btn.addEventListener("click", (event) => {
+        const form = btn.closest('form');
+        let is_active = false;
+
+        if(form.querySelectorAll('input[type="checkbox"]:checked').length)
+          is_active = true;
+
+        if(is_active) {
+          form.classList.add('active');
+        } else {
+          form.classList.remove('active');
+        }
+      })
+  );
+
+  const formResetBtns = Array.from(
+      document.querySelectorAll('.library__filters-form .library__filters-form-reset')
+  );
+  formResetBtns.forEach((btn) =>
+      btn.addEventListener("click", (event) => {
+        const form = btn.closest('form');
+        form.classList.remove('active');
+      })
   );
 });
