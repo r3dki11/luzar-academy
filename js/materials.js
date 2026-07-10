@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+  var headerSearch = document.querySelector(".materials-header-search");
+  var searchInput = document.querySelector(".materials-search__input");
+
+  if (headerSearch && searchInput) {
+    headerSearch.addEventListener("click", function () {
+      searchInput.focus({ preventScroll: true });
+      searchInput.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  }
+
   var materials = document.querySelector(".materials");
   var layout = document.querySelector(".materials-layout");
   var toggle = document.querySelector(".js-materials-menu-toggle");

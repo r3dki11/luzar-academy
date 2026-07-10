@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Материалы — Фотографии</title>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css" />
+    <link href="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.css" rel="stylesheet" />
+    <link href="css/main.min.css?t=1687285106262" rel="stylesheet" />
+    <link href="css/fix-vendors.min.css?t=1687285106262" rel="stylesheet" />
+    <link href="css/materials.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="page page--materials">
+        <header class="header" id="header">
+            <div class="page__center">
+                <div class="header__center">
+                    <div class="header__logo">
+                        <div class="card-image" style="padding-top: 28%"> <img src="img/logo.svg" alt="" /></div>
+                    </div>
+                    <div class="header__nav">
+                        <nav class="header__nav__group">
+                            <ul>
+                                <li><a href="points.html">Точки продаж</a></li>
+                                <li><a href="#">Прайс</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                                <li><a href="faq.html">Вопрос/ответ</a></li>
+                                <li><a href="#">Запрос по VIN</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="header__nav__group">
+                            <ul>
+                                <li><a href="rules.html">Гарантия</a></li>
+                                <li><a href="#">Поиск по авто</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__star"> <button class="btn btn-favorite btn-favorite--header"><svg
+                                class="icon">
+                                <use xlink:href="img/sprite-icons.svg#star"></use>
+                            </svg></button></div>
+                    <div class="header__catalog"> <button class="btn btn-filled">Каталог</button></div>
+                    <button class="materials-header-search" type="button" aria-label="Открыть поиск">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M10.5 3a7.5 7.5 0 1 0 4.71 13.34L20.88 22 22 20.88l-5.66-5.67A7.5 7.5 0 0 0 10.5 3Zm0 1.6a5.9 5.9 0 1 1 0 11.8 5.9 5.9 0 0 1 0-11.8Z" />
+                        </svg>
+                    </button>
+                    <div class="header__burger"> <button
+                            class="btn-burger js-nav-burger-btn"><span></span><span></span><span></span></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page__content">
+            <section class="materials materials--photos">
+                <div class="page__center">
+                    <nav class="nav-bread materials__breadcrumbs">
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="materials.html">Материалы</a></li>
+                            <li class="active"><span>Фотографии</span></li>
+                        </ul>
+                    </nav>
+                    <div class="materials__head">
+                        <h1 class="materials__title">Материалы</h1>
+                        <div class="materials-search">
+                            <form action="/" method="GET" class="materials-search__form">
+                                <input class="materials-search__input" type="search" name="q"
+                                    placeholder="Поиск материалов" />
+                                <button class="materials-search__submit" type="submit" aria-label="Найти">
+                                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M7.33398 1.33301C10.6477 1.33301 13.334 4.0193 13.334 7.33301C13.334 8.74965 12.8416 10.0507 12.0205 11.0771L15.1387 14.1953L14.1963 15.1377L11.0781 12.0195C10.0517 12.8406 8.75063 13.333 7.33398 13.333C4.02028 13.333 1.33398 10.6467 1.33398 7.33301C1.33398 4.0193 4.02028 1.33301 7.33398 1.33301ZM7.33398 2.66602C4.75666 2.66602 2.66699 4.75568 2.66699 7.33301C2.66699 9.91034 4.75666 12 7.33398 12C9.91131 12 12.001 9.91034 12.001 7.33301C12.001 4.75568 9.91131 2.66602 7.33398 2.66602Z" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="materials-layout">
+                        <aside class="materials-layout__sidebar">
+                            <nav class="materials-menu" id="materials-menu" aria-label="Разделы материалов">
+                                <a href="materials.html" class="materials-menu__link">
+                                    <span>Общие</span>
+                                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M11.1387 7.52832V8.47168L5.80566 13.8047L4.86328 12.8623L9.72461 8L4.86328 3.1377L5.80566 2.19531L11.1387 7.52832Z" />
+                                    </svg>
+                                </a>
+                                <a href="materials-photo.html" class="materials-menu__link active" aria-current="page">
+                                    <span>Фотографии</span>
+                                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M11.1387 7.52832V8.47168L5.80566 13.8047L4.86328 12.8623L9.72461 8L4.86328 3.1377L5.80566 2.19531L11.1387 7.52832Z" />
+                                    </svg>
+                                </a>
+                                <a href="materials-video.html" class="materials-menu__link">
+                                    <span>Видео</span>
+                                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M11.1387 7.52832V8.47168L5.80566 13.8047L4.86328 12.8623L9.72461 8L4.86328 3.1377L5.80566 2.19531L11.1387 7.52832Z" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="materials-menu__link">
+                                    <span>Промо видео</span>
+                                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M11.1387 7.52832V8.47168L5.80566 13.8047L4.86328 12.8623L9.72461 8L4.86328 3.1377L5.80566 2.19531L11.1387 7.52832Z" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="materials-menu__link">
+                                    <span>Сертификаты</span>
+                                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M11.1387 7.52832V8.47168L5.80566 13.8047L4.86328 12.8623L9.72461 8L4.86328 3.1377L5.80566 2.19531L11.1387 7.52832Z" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="materials-menu__link">
+                                    <span>Инструкции</span>
+                                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M11.1387 7.52832V8.47168L5.80566 13.8047L4.86328 12.8623L9.72461 8L4.86328 3.1377L5.80566 2.19531L11.1387 7.52832Z" />
+                                    </svg>
+                                </a>
+                                <a href="#" class="materials-menu__link">
+                                    <span>Техническая справка</span>
+                                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M11.1387 7.52832V8.47168L5.80566 13.8047L4.86328 12.8623L9.72461 8L4.86328 3.1377L5.80566 2.19531L11.1387 7.52832Z" />
+                                    </svg>
+                                </a>
+                            </nav>
+                        </aside>
+                        <div class="materials-layout__content">
+                            <div class="materials-mobile-toolbar">
+                                <button class="materials-mobile-toolbar__section js-materials-menu-toggle" type="button"
+                                    aria-expanded="false" aria-controls="materials-menu">
+                                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M8.59961 2.94238L4.07129 7.47168H14.4717V8.80469H4.09082L8.59961 13.3135L7.65723 14.2568L2 8.59961V7.65723L7.65723 2L8.59961 2.94238Z" />
+                                    </svg>
+                                    <span>Фотографии</span>
+                                </button>
+                                <a href="#" class="materials-mobile-toolbar__download">
+                                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M2.66602 13.333H13.332V10H14.666V14L13.999 14.667H1.99902L1.33203 14V10H2.66602V13.333ZM8.66602 9.05762L10.8613 6.8623L11.8037 7.80469L8.4707 11.1377H7.52734L4.19434 7.80469L5.13672 6.8623L7.33203 9.05762V2H8.66602V9.05762Z" />
+                                    </svg>
+                                    <span>Скачать все</span>
+                                </a>
+                            </div>
+                            <div class="materials-groups">
+                                <section class="materials-group" aria-labelledby="general-photos-title">
+                                    <h2 class="materials-group__title" id="general-photos-title">Общие фотографии</h2>
+                                    <ul class="materials-list materials-list--photo-general">
+                                        <li>
+                                            <article class="materials-card">
+                                                <div class="materials-card__main">
+                                                    <img src="img/materials/materials-image.svg" alt=""
+                                                        class="materials-card__icon" />
+                                                    <a href="#" class="materials-card__title"><span>Новые фото за месяц</span></a>
+                                                </div>
+                                                <div class="materials-card__actions">
+                                                    <a href="#" class="materials-action" data-tooltip="Скачать материалы"
+                                                        aria-label="Скачать «Новые фото за месяц»">
+                                                        <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M2.66602 13.333H13.332V10H14.666V14L13.999 14.667H1.99902L1.33203 14V10H2.66602V13.333ZM8.66602 9.05762L10.8613 6.8623L11.8037 7.80469L8.4707 11.1377H7.52734L4.19434 7.80469L5.13672 6.8623L7.33203 9.05762V2H8.66602V9.05762Z" />
+                                    </svg>
+                                                    </a>
+                                                    <a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке"
+                                                        aria-label="Открыть «Новые фото за месяц» в новой вкладке" target="_blank">
+                                                        <svg viewBox="0 0 16 16" aria-hidden="true">
+                                                    <path d="M13.8047 2.66699V11.333H12.4717V4.27637L2.94238 13.8047L2 12.8623L11.5283 3.33301H4.47168V2H13.1377L13.8047 2.66699Z" />
+                                                </svg>
+                                                    </a>
+                                                </div>
+                                            </article>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="materials-group" aria-labelledby="product-photos-title">
+                                    <h2 class="materials-group__title" id="product-photos-title">Фотографии продукции</h2>
+                                    <ul class="materials-list materials-product-list">
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Бачки расширительные</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Бачки расширительные»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Бачки расширительные» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Новые фотографии продукции</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Новые фотографии продукции»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Новые фотографии продукции» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Датчики</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Датчики»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Датчики» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Компоненты изделий</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Компоненты изделий»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Компоненты изделий» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Клапаны расширительные кондиционера (ТРВ)</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Клапаны расширительные кондиционера (ТРВ)»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Клапаны расширительные кондиционера (ТРВ)» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Компрессоры кондиционера</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Компрессоры кондиционера»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Компрессоры кондиционера» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Крышки</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Крышки»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Крышки» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Клапаны расширительные кондиционера (ТРВ)</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Клапаны расширительные кондиционера (ТРВ)»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Клапаны расширительные кондиционера (ТРВ)» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Крышки</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Крышки»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Крышки» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Крышки</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Крышки»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Крышки» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Крышки</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Крышки»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Крышки» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Бачки расширительные</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Бачки расширительные»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Бачки расширительные» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Датчики</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Датчики»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Датчики» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Компоненты изделий</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Компоненты изделий»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Компоненты изделий» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Клапаны расширительные кондиционера (ТРВ)</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Клапаны расширительные кондиционера (ТРВ)»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Клапаны расширительные кондиционера (ТРВ)» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Компрессоры кондиционера</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Компрессоры кондиционера»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Компрессоры кондиционера» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Крышки</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Крышки»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Крышки» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Клапаны расширительные кондиционера (ТРВ)</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Клапаны расширительные кондиционера (ТРВ)»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Клапаны расширительные кондиционера (ТРВ)» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Клапаны расширительные кондиционера (ТРВ)</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Клапаны расширительные кондиционера (ТРВ)»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Клапаны расширительные кондиционера (ТРВ)» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                        <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Клапаны расширительные кондиционера (ТРВ)</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Клапаны расширительные кондиционера (ТРВ)»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Клапаны расширительные кондиционера (ТРВ)» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="materials-download-all">
+                                <a href="#" class="materials-download-all__link">
+                                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M2.66602 13.333H13.332V10H14.666V14L13.999 14.667H1.99902L1.33203 14V10H2.66602V13.333ZM8.66602 9.05762L10.8613 6.8623L11.8037 7.80469L8.4707 11.1377H7.52734L4.19434 7.80469L5.13672 6.8623L7.33203 9.05762V2H8.66602V9.05762Z" />
+                                    </svg>
+                                    <span>Скачать все</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="page__center">
+                <div class="footer__center">
+                    <div class="footer__left">
+                        <div class="footer__col-about">
+                            <div class="footer__logo">
+                                <div class="card-image" style="padding-top: 28%"> <img src="img/logo--white.svg"
+                                        alt="" /></div>
+                            </div>
+                        </div>
+                        <div class="footer__col-contacts"> <a href="#" class="footer__phone"><svg class="icon">
+                                    <use xlink:href="img/sprite-icons.svg#phone"></use>
+                                </svg><span>8 800 555-89-65</span></a>
+                            <div class="footer__social">
+                                <nav class="nav-social"> <a href="#"><svg class="icon">
+                                            <use xlink:href="img/sprite-social.svg#vk"></use>
+                                        </svg></a> <a href="#"><svg class="icon">
+                                            <use xlink:href="img/sprite-social.svg#youtube"></use>
+                                        </svg></a> <a href="#"><svg class="icon">
+                                            <use xlink:href="img/sprite-social.svg#r"></use>
+                                        </svg></a> <a href="#"><svg class="icon">
+                                            <use xlink:href="img/sprite-social.svg#d2"></use>
+                                        </svg></a> <a href="#"><svg class="icon">
+                                            <use xlink:href="img/sprite-social.svg#telegram"></use>
+                                        </svg></a></nav>
+                            </div>
+                        </div>
+                        <div class="footer__col-info">
+                            <nav class="footer__nav">
+                                <ul>
+                                    <li><a href="#">Пользовательское соглашение</a></li>
+                                    <li><a href="#">Проверка совместимости</a></li>
+                                </ul>
+                            </nav>
+                            <div class="footer__tecdoc">
+                                <div class="footer__tecdoc__logo">
+                                    <div class="card-image" style="padding-top: 24.36%"> <img
+                                            src="img/logo-tecdoc--white.png" alt="" /></div>
+                                </div>
+                                <div class="footer__tecdoc__desc"> Компания LUZAR включена<br />в базу данных
+                                    каталога запчастей TecDoc</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="footer__year">
+                            <div class="card-image" style="padding-top: 93.45%"> <img src="img/20-years.svg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__desc"> 2023 © ООО "ЭРЛАЙН".<br />Производитель автозапчастей и
+                    автоаксессуаров.<br />Все права защищены. Реализация в РФ и СНГ.</div>
+            </div>
+        </footer>
+        <nav class="nav-burger" id="nav-burger">
+            <div class="page__center">
+                <div class="nav-burger__group">
+                    <ul>
+                        <li> <a href="#"><span>Каталог</span><svg class="icon flip-x">
+                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                </svg></a></li>
+                        <li> <a href="#"><span>Точки продаж</span><svg class="icon flip-x">
+                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                </svg></a></li>
+                        <li> <a href="#"><span>Поиск по автомобилям</span><svg class="icon flip-x">
+                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                </svg></a></li>
+                        <li> <a href="#"><span>Гарантия и возврат</span><svg class="icon flip-x">
+                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                </svg></a></li>
+                        <li> <a href="#"><span>Прайс</span><svg class="icon flip-x">
+                                    <use xlink:href="img/sprite-icons.svg#arrow-left"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+                <div class="nav-burger__group">
+                    <ul>
+                        <li><a href="materials.html">Материалы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="faq.html">Вопрос/ответ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <aside class="popup-ask mfp-with-anim mfp-hide" id="popup-ask">
+            <h2 class="popup-ask__title">Запрос по VIN</h2>
+            <form action="#" class="form-default">
+                <div class="form-default__item"> <label class="form-default__label">ФИО <span>*</span></label>
+                    <div class="input-default"> <input type="text" /></div>
+                </div>
+                <div class="form-default__item"> <label class="form-default__label">VIN <span>*</span></label>
+                    <div class="input-default"> <input type="text" /></div>
+                </div>
+                <div class="form-default__item"> <label class="form-default__label">Марка\модель
+                        <span>*</span></label>
+                    <div class="input-default"> <input type="text" /></div>
+                </div>
+                <div class="form-default__item"> <label class="form-default__label">E-mail <span>*</span></label>
+                    <div class="input-default"> <input type="text" /></div>
+                </div>
+                <div class="form-default__item"> <label class="form-default__label">Телефон <span>*</span></label>
+                    <div class="input-default"> <input type="text" /></div>
+                </div>
+                <div class="form-default__item"> <label class="form-default__label">Интересующие запчасти
+                        <span>*</span></label>
+                    <div class="input-default"> <input type="text" /></div>
+                </div>
+                <div class="form-default__btns"> <button class="btn btn-filled">Отправить</button></div>
+            </form>
+        </aside>
+        <aside class="popup-markets mfp-with-anim mfp-hide" id="popup-markets">
+            <div class="popup-markets__header">
+                <h2 class="popup-markets__title">Маркетплейсы</h2>
+                <div class="popup-markets__region">Россия</div>
+            </div>
+            <table class="table-markets">
+                <tr>
+                    <th>Наименование</th>
+                    <th>Сайт</th>
+                </tr>
+                <tr>
+                    <td>OZON</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+                <tr>
+                    <td>WILDBERRIS</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+                <tr>
+                    <td>ЯНДЕКС МАРКЕТ</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+                <tr>
+                    <td>ОНЛАЙН ТРЕЙД.РУ</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+                <tr>
+                    <td>ВсеИнструмены.ру</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+                <tr>
+                    <td>СБЕР МЕГАМАРКЕТ</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+                <tr>
+                    <td>enex.market</td>
+                    <td><a href="#">Перейти</a></td>
+                </tr>
+            </table>
+        </aside>
+    </div>
+    <script src="js/vendor/modernizr.js?t=1687285106262"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-custom-select@1.6.4/dist/js/jquery.custom-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js?t=1687285106262"></script>
+    <script src="js/materials.js"></script>
+    <div id="notify" class="notify"></div>
+    <link rel="stylesheet" href="https://ildar-meyker.ru/libs/pagelist/css/pagelist.min.css" />
+    <script src="https://ildar-meyker.ru/libs/pagelist/js/pagelist.min.js"></script>
+</body>
+
+</html>
