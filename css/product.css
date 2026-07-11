@@ -1,0 +1,76 @@
+.slider-preview__main .slider-preview__image,
+.slider-preview__tape .slider-preview__image {
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* На текущем проде после основной таблицы остаётся только справочный футер. */
+.l-product__extra__header,
+.l-product__extra__scroll {
+  display: none;
+}
+
+/* Порядок блоков повторяет production-карточку. */
+.product-page-vendor-scope {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-page-vendor-scope > .l-product__main {
+  order: 1;
+}
+
+.product-page-vendor-scope > .l-product__match {
+  order: 2;
+}
+
+.product-page-vendor-scope > .l-product__goods {
+  order: 3;
+}
+
+.product-page-vendor-scope > .product_reviews_container {
+  order: 4;
+}
+
+.product-page-vendor-scope > .l-product__docs {
+  order: 5;
+}
+
+.product-page-vendor-scope > .l-product__complectation {
+  order: 6;
+}
+
+/* Состав материалов соответствует карточке на проде и готов к расширению. */
+.panel-docs__search,
+.panel-docs__left {
+  display: none;
+}
+
+.panel-docs__right {
+  width: 100%;
+}
+
+.list-docs__col:nth-child(n + 2) {
+  display: none;
+}
+
+.list-goods__col:nth-child(n + 4) {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .tabs-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #tab-search-1 {
+    order: 1;
+  }
+
+  #tab-search-2 {
+    order: 2;
+  }
+}
