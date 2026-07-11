@@ -1311,5 +1311,125 @@ body.is-promo-video-modal-open {
     grid-template-columns: 1fr;
     gap: 0.8rem;
   }
+}
 
+/* Materials attached to an article, review or news item (Figma 4873:27821). */
+.article-materials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+  max-width: 79.5rem;
+  margin-top: 2.4rem;
+  padding: 2.4rem;
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.article-materials__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.15;
+  color: #303236;
+}
+
+.article-materials__panel {
+  border-radius: 1rem;
+  background: #f7f7f8;
+}
+
+.article-materials__files {
+  padding: 1.6rem;
+}
+
+.article-materials .materials-card {
+  align-items: center;
+  gap: 0.8rem;
+  width: max-content;
+  max-width: 100%;
+  min-height: 0;
+  padding: 0.6rem 0;
+  border-radius: 0;
+  background: transparent;
+  transition: none;
+}
+
+.article-materials .materials-card:hover,
+.article-materials .materials-card:focus-within {
+  background: transparent;
+}
+
+.article-materials .materials-card__main {
+  align-items: center;
+  gap: 0.8rem;
+  flex: 0 1 auto;
+}
+
+.article-materials .materials-card__title {
+  width: auto;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.article-materials .materials-card__title span {
+  overflow: visible;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.article-materials .materials-card__actions {
+  gap: 0;
+}
+
+.article-materials .materials-action {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.article-materials__download-all {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+  box-shadow: inset 0 0.1rem #fff;
+}
+
+@media (max-width: 599.98px) {
+  .article-materials {
+    gap: 1.2rem;
+    padding: 1.6rem;
+  }
+
+  .article-materials__files {
+    padding: 1.2rem;
+  }
+
+  .article-materials .materials-card {
+    width: 100%;
+    min-height: 4.4rem;
+    padding: 0.6rem 0;
+  }
+
+  .article-materials .materials-card__main {
+    flex: 1 1 auto;
+  }
+
+  .article-materials .materials-card__title span {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+  }
+
+  .article-materials .materials-card__actions {
+    margin-left: auto;
+  }
+
+  .article-materials .materials-action {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .article-materials__download-all {
+    padding: 1.2rem;
+  }
 }
