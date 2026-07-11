@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.css" rel="stylesheet" />
     <link href="css/main.min.css?t=1687285106262" rel="stylesheet" />
     <link href="css/fix-vendors.min.css?t=1687285106262" rel="stylesheet" />
-    <link href="css/materials.css" rel="stylesheet" />
+    <link href="css/materials.css?t=20260710-9" rel="stylesheet" />
 </head>
 
 <body>
@@ -71,6 +71,11 @@
                             <form action="/" method="GET" class="materials-search__form">
                                 <input class="materials-search__input" type="search" name="q"
                                     placeholder="Поиск материалов" />
+                                <button class="materials-search__reset" type="button" aria-label="Очистить поиск" hidden>
+                                    <svg viewBox="0 0 16 16" aria-hidden="true">
+                                        <path d="M13.334 3.64551L8.97949 8L13.334 12.3545L12.3555 13.333L8.00098 8.97852L3.64648 13.333L2.66797 12.3545L7.02246 8L2.66797 3.64551L3.64648 2.66699L8.00098 7.02148L12.3555 2.66699L13.334 3.64551Z" />
+                                    </svg>
+                                </button>
                                 <button class="materials-search__submit" type="submit" aria-label="Найти">
                                     <svg viewBox="0 0 16 16" aria-hidden="true">
                                         <path d="M7.33398 1.33301C10.6477 1.33301 13.334 4.0193 13.334 7.33301C13.334 8.74965 12.8416 10.0507 12.0205 11.0771L15.1387 14.1953L14.1963 15.1377L11.0781 12.0195C10.0517 12.8406 8.75063 13.333 7.33398 13.333C4.02028 13.333 1.33398 10.6467 1.33398 7.33301C1.33398 4.0193 4.02028 1.33301 7.33398 1.33301ZM7.33398 2.66602C4.75666 2.66602 2.66699 4.75568 2.66699 7.33301C2.66699 9.91034 4.75666 12 7.33398 12C9.91131 12 12.001 9.91034 12.001 7.33301C12.001 4.75568 9.91131 2.66602 7.33398 2.66602Z" />
@@ -100,25 +105,25 @@
                                         <path d="M11.1387 7.52832V8.47168L5.80566 13.8047L4.86328 12.8623L9.72461 8L4.86328 3.1377L5.80566 2.19531L11.1387 7.52832Z" />
                                     </svg>
                                 </a>
-                                <a href="#" class="materials-menu__link">
+                                <a href="materials-promo-video.html" class="materials-menu__link">
                                     <span>Промо видео</span>
                                     <svg viewBox="0 0 16 16" aria-hidden="true">
                                         <path d="M11.1387 7.52832V8.47168L5.80566 13.8047L4.86328 12.8623L9.72461 8L4.86328 3.1377L5.80566 2.19531L11.1387 7.52832Z" />
                                     </svg>
                                 </a>
-                                <a href="#" class="materials-menu__link">
+                                <a href="materials-certificates.html" class="materials-menu__link">
                                     <span>Сертификаты</span>
                                     <svg viewBox="0 0 16 16" aria-hidden="true">
                                         <path d="M11.1387 7.52832V8.47168L5.80566 13.8047L4.86328 12.8623L9.72461 8L4.86328 3.1377L5.80566 2.19531L11.1387 7.52832Z" />
                                     </svg>
                                 </a>
-                                <a href="#" class="materials-menu__link">
+                                <a href="materials-instructions.html" class="materials-menu__link">
                                     <span>Инструкции</span>
                                     <svg viewBox="0 0 16 16" aria-hidden="true">
                                         <path d="M11.1387 7.52832V8.47168L5.80566 13.8047L4.86328 12.8623L9.72461 8L4.86328 3.1377L5.80566 2.19531L11.1387 7.52832Z" />
                                     </svg>
                                 </a>
-                                <a href="#" class="materials-menu__link">
+                                <a href="materials-technical.html" class="materials-menu__link">
                                     <span>Техническая справка</span>
                                     <svg viewBox="0 0 16 16" aria-hidden="true">
                                         <path d="M11.1387 7.52832V8.47168L5.80566 13.8047L4.86328 12.8623L9.72461 8L4.86328 3.1377L5.80566 2.19531L11.1387 7.52832Z" />
@@ -173,7 +178,7 @@
                                 </section>
                                 <section class="materials-group" aria-labelledby="product-photos-title">
                                     <h2 class="materials-group__title" id="product-photos-title">Фотографии продукции</h2>
-                                    <ul class="materials-list materials-product-list">
+                                    <ul class="materials-list materials-list--columns">
                                         <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Бачки расширительные</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Бачки расширительные»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Бачки расширительные» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
                                         <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Новые фотографии продукции</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Новые фотографии продукции»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Новые фотографии продукции» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
                                         <li><article class="materials-card"><div class="materials-card__main"><img src="img/materials/materials-image.svg" alt="" class="materials-card__icon" /><a href="#" class="materials-card__title"><span>Датчики</span></a></div><div class="materials-card__actions"><a href="#" class="materials-action" data-tooltip="Скачать материалы" aria-label="Скачать «Датчики»"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.666 13.333h10.666V10h1.334v4l-.667.667h-12L1.332 14v-4h1.334v3.333ZM8.666 9.058l2.195-2.196.943.943-3.333 3.333h-.944L4.194 7.805l.943-.943 2.195 2.196V2h1.334v7.058Z" /></svg></a><a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке" aria-label="Открыть «Датчики» в новой вкладке" target="_blank"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M13.805 2.667v8.666h-1.333V4.276l-9.53 9.529L2 12.862l9.528-9.529H4.472V2h8.666l.667.667Z" /></svg></a></div></article></li>
@@ -370,7 +375,7 @@
     <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.min.js?t=1687285106262"></script>
-    <script src="js/materials.js"></script>
+    <script type="module" src="js/materials.js?t=20260710-6"></script>
     <div id="notify" class="notify"></div>
     <link rel="stylesheet" href="https://ildar-meyker.ru/libs/pagelist/css/pagelist.min.css" />
     <script src="https://ildar-meyker.ru/libs/pagelist/js/pagelist.min.js"></script>

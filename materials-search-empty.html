@@ -5,13 +5,13 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Материалы</title>
+    <title>Материалы — Ничего не найдено</title>
     <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css" />
     <link href="https://cdn.jsdelivr.net/npm/simplebar@6.2.5/dist/simplebar.min.css" rel="stylesheet" />
     <link href="css/main.min.css?t=1687285106262" rel="stylesheet" />
     <link href="css/fix-vendors.min.css?t=1687285106262" rel="stylesheet" />
-    <link href="css/materials.css?t=20260710-9" rel="stylesheet" />
+    <link href="css/materials.css?t=20260710-11" rel="stylesheet" />
 </head>
 
 <body>
@@ -56,7 +56,7 @@
             </div>
         </header>
         <main class="page__content">
-            <section class="materials">
+            <section class="materials materials--search-results materials--empty-results">
                 <div class="page__center">
                     <nav class="nav-bread materials__breadcrumbs">
                         <ul>
@@ -68,8 +68,7 @@
                         <h1 class="materials__title">Материалы</h1>
                         <div class="materials-search">
                             <form action="/" method="GET" class="materials-search__form">
-                                <input class="materials-search__input" type="search" name="q"
-                                    placeholder="Поиск материалов" />
+                                <input class="materials-search__input" type="search" name="q" value="Праздник" aria-label="Поиск материалов" />
                                 <button class="materials-search__reset" type="button" aria-label="Очистить поиск" hidden>
                                     <svg viewBox="0 0 16 16" aria-hidden="true">
                                         <path d="M13.334 3.64551L8.97949 8L13.334 12.3545L12.3555 13.333L8.00098 8.97852L3.64648 13.333L2.66797 12.3545L7.02246 8L2.66797 3.64551L3.64648 2.66699L8.00098 7.02148L12.3555 2.66699L13.334 3.64551Z" />
@@ -87,7 +86,7 @@
                     <div class="materials-layout">
                         <aside class="materials-layout__sidebar">
                             <nav class="materials-menu" id="materials-menu" aria-label="Разделы материалов">
-                                <a href="materials.html" class="materials-menu__link active" aria-current="page">
+                                <a href="materials.html" class="materials-menu__link">
                                     <span>Общие</span>
                                     <svg viewBox="0 0 16 16" aria-hidden="true">
                                         <path
@@ -129,7 +128,7 @@
                                             d="M11.1387 7.52832V8.47168L5.80566 13.8047L4.86328 12.8623L9.72461 8L4.86328 3.1377L5.80566 2.19531L11.1387 7.52832Z" />
                                     </svg>
                                 </a>
-                                <a href="materials-technical.html" class="materials-menu__link">
+                                <a href="materials-technical.html" class="materials-menu__link active" aria-current="page">
                                     <span>Техническая справка</span>
                                     <svg viewBox="0 0 16 16" aria-hidden="true">
                                         <path
@@ -139,159 +138,12 @@
                             </nav>
                         </aside>
                         <div class="materials-layout__content">
-                            <div class="materials-mobile-toolbar">
-                                <button class="materials-mobile-toolbar__section js-materials-menu-toggle" type="button"
-                                    aria-expanded="false" aria-controls="materials-menu">
-                                    <svg viewBox="0 0 16 16" aria-hidden="true">
-                                        <path
-                                            d="M8.59961 2.94238L4.07129 7.47168H14.4717V8.80469H4.09082L8.59961 13.3135L7.65723 14.2568L2 8.59961V7.65723L7.65723 2L8.59961 2.94238Z" />
-                                    </svg>
-                                    <span>Общие</span>
-                                </button>
-                                <a href="#" class="materials-mobile-toolbar__download">
-                                    <svg viewBox="0 0 16 16" aria-hidden="true">
-                                        <path
-                                            d="M2.66602 13.333H13.332V10H14.666V14L13.999 14.667H1.99902L1.33203 14V10H2.66602V13.333ZM8.66602 9.05762L10.8613 6.8623L11.8037 7.80469L8.4707 11.1377H7.52734L4.19434 7.80469L5.13672 6.8623L7.33203 9.05762V2H8.66602V9.05762Z" />
-                                    </svg>
-                                    <span>Скачать все</span>
-                                </a>
-                            </div>
-                            <ul class="materials-list">
-                                <li>
-                                    <article class="materials-card">
-                                        <div class="materials-card__main">
-                                            <img src="img/materials/materials-doc.svg" alt=""
-                                                class="materials-card__icon" />
-                                            <a href="#" class="materials-card__title"><span>Прайс-лист</span></a>
-                                        </div>
-                                        <div class="materials-card__actions">
-                                            <a href="#" class="materials-action" data-tooltip="Скачать материалы"
-                                                aria-label="Скачать материалы">
-                                                <svg viewBox="0 0 16 16" aria-hidden="true">
-                                                    <path
-                                                        d="M2.66602 13.333H13.332V10H14.666V14L13.999 14.667H1.99902L1.33203 14V10H2.66602V13.333ZM8.66602 9.05762L10.8613 6.8623L11.8037 7.80469L8.4707 11.1377H7.52734L4.19434 7.80469L5.13672 6.8623L7.33203 9.05762V2H8.66602V9.05762Z" />
-                                                </svg>
-                                            </a>
-                                            <a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке"
-                                                aria-label="Открыть в новой вкладке" target="_blank">
-                                                <svg viewBox="0 0 16 16" aria-hidden="true">
-                                                    <path
-                                                        d="M13.8047 2.66699V11.333H12.4717V4.27637L2.94238 13.8047L2 12.8623L11.5283 3.33301H4.47168V2H13.1377L13.8047 2.66699Z" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </article>
-                                </li>
-                                <li>
-                                    <article class="materials-card">
-                                        <div class="materials-card__main">
-                                            <img src="img/materials/materials-image.svg" alt=""
-                                                class="materials-card__icon" />
-                                            <a href="#" class="materials-card__title"><span>Каталог LUZAR: отечественные
-                                                    автомобили</span></a>
-                                        </div>
-                                        <div class="materials-card__actions">
-                                            <a href="#" class="materials-action" data-tooltip="Скачать материалы"
-                                                aria-label="Скачать материалы">
-                                                <svg viewBox="0 0 16 16" aria-hidden="true">
-                                                    <path
-                                                        d="M2.66602 13.333H13.332V10H14.666V14L13.999 14.667H1.99902L1.33203 14V10H2.66602V13.333ZM8.66602 9.05762L10.8613 6.8623L11.8037 7.80469L8.4707 11.1377H7.52734L4.19434 7.80469L5.13672 6.8623L7.33203 9.05762V2H8.66602V9.05762Z" />
-                                                </svg>
-                                            </a>
-                                            <a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке"
-                                                aria-label="Открыть в новой вкладке" target="_blank">
-                                                <svg viewBox="0 0 16 16" aria-hidden="true">
-                                                    <path
-                                                        d="M13.8047 2.66699V11.333H12.4717V4.27637L2.94238 13.8047L2 12.8623L11.5283 3.33301H4.47168V2H13.1377L13.8047 2.66699Z" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </article>
-                                </li>
-                                <li>
-                                    <article class="materials-card">
-                                        <div class="materials-card__main">
-                                            <img src="img/materials/materials-gear.svg" alt=""
-                                                class="materials-card__icon" />
-                                            <a href="#" class="materials-card__title"><span>Метрические данные</span></a>
-                                        </div>
-                                        <div class="materials-card__actions">
-                                            <a href="#" class="materials-action" data-tooltip="Скачать материалы"
-                                                aria-label="Скачать материалы">
-                                                <svg viewBox="0 0 16 16" aria-hidden="true">
-                                                    <path
-                                                        d="M2.66602 13.333H13.332V10H14.666V14L13.999 14.667H1.99902L1.33203 14V10H2.66602V13.333ZM8.66602 9.05762L10.8613 6.8623L11.8037 7.80469L8.4707 11.1377H7.52734L4.19434 7.80469L5.13672 6.8623L7.33203 9.05762V2H8.66602V9.05762Z" />
-                                                </svg>
-                                            </a>
-                                            <a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке"
-                                                aria-label="Открыть в новой вкладке" target="_blank">
-                                                <svg viewBox="0 0 16 16" aria-hidden="true">
-                                                    <path
-                                                        d="M13.8047 2.66699V11.333H12.4717V4.27637L2.94238 13.8047L2 12.8623L11.5283 3.33301H4.47168V2H13.1377L13.8047 2.66699Z" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </article>
-                                </li>
-                                <li>
-                                    <article class="materials-card">
-                                        <div class="materials-card__main">
-                                            <img src="img/materials/materials-image.svg" alt=""
-                                                class="materials-card__icon" />
-                                            <a href="#" class="materials-card__title"><span>Евробуклет LUZAR</span></a>
-                                        </div>
-                                        <div class="materials-card__actions">
-                                            <a href="#" class="materials-action" data-tooltip="Скачать материалы"
-                                                aria-label="Скачать материалы">
-                                                <svg viewBox="0 0 16 16" aria-hidden="true">
-                                                    <path
-                                                        d="M2.66602 13.333H13.332V10H14.666V14L13.999 14.667H1.99902L1.33203 14V10H2.66602V13.333ZM8.66602 9.05762L10.8613 6.8623L11.8037 7.80469L8.4707 11.1377H7.52734L4.19434 7.80469L5.13672 6.8623L7.33203 9.05762V2H8.66602V9.05762Z" />
-                                                </svg>
-                                            </a>
-                                            <a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке"
-                                                aria-label="Открыть в новой вкладке" target="_blank">
-                                                <svg viewBox="0 0 16 16" aria-hidden="true">
-                                                    <path
-                                                        d="M13.8047 2.66699V11.333H12.4717V4.27637L2.94238 13.8047L2 12.8623L11.5283 3.33301H4.47168V2H13.1377L13.8047 2.66699Z" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </article>
-                                </li>
-                                <li>
-                                    <article class="materials-card">
-                                        <div class="materials-card__main">
-                                            <img src="img/materials/materials-doc.svg" alt=""
-                                                class="materials-card__icon" />
-                                            <a href="#" class="materials-card__title"><span>LUZAR аналоги</span></a>
-                                        </div>
-                                        <div class="materials-card__actions">
-                                            <a href="#" class="materials-action" data-tooltip="Скачать материалы"
-                                                aria-label="Скачать материалы">
-                                                <svg viewBox="0 0 16 16" aria-hidden="true">
-                                                    <path
-                                                        d="M2.66602 13.333H13.332V10H14.666V14L13.999 14.667H1.99902L1.33203 14V10H2.66602V13.333ZM8.66602 9.05762L10.8613 6.8623L11.8037 7.80469L8.4707 11.1377H7.52734L4.19434 7.80469L5.13672 6.8623L7.33203 9.05762V2H8.66602V9.05762Z" />
-                                                </svg>
-                                            </a>
-                                            <a href="#" class="materials-action" data-tooltip="Открыть в новой вкладке"
-                                                aria-label="Открыть в новой вкладке" target="_blank">
-                                                <svg viewBox="0 0 16 16" aria-hidden="true">
-                                                    <path
-                                                        d="M13.8047 2.66699V11.333H12.4717V4.27637L2.94238 13.8047L2 12.8623L11.5283 3.33301H4.47168V2H13.1377L13.8047 2.66699Z" />
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </article>
-                                </li>
-                            </ul>
-                            <div class="materials-download-all">
-                                <a href="#" class="materials-download-all__link">
-                                    <svg viewBox="0 0 16 16" aria-hidden="true">
-                                        <path
-                                            d="M2.66602 13.333H13.332V10H14.666V14L13.999 14.667H1.99902L1.33203 14V10H2.66602V13.333ZM8.66602 9.05762L10.8613 6.8623L11.8037 7.80469L8.4707 11.1377H7.52734L4.19434 7.80469L5.13672 6.8623L7.33203 9.05762V2H8.66602V9.05762Z" />
-                                    </svg>
-                                    <span>Скачать все</span>
-                                </a>
+                            <div class="materials-empty" role="status" aria-live="polite">
+                                <h2 class="materials-empty__title">
+                                    <span class="materials-empty__title-desktop">Ничего не найдено</span>
+                                    <span class="materials-empty__title-mobile">Результаты поиска: найдено: 0</span>
+                                </h2>
+                                <p class="materials-empty__text">Ничего не нашлось. Попробуйте измените запрос</p>
                             </div>
                         </div>
                     </div>
@@ -458,10 +310,12 @@
     <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.min.js?t=1687285106262"></script>
-    <script type="module" src="js/materials.js?t=20260710-6"></script>
+    <script type="module" src="js/materials.js?t=20260710-7"></script>
     <div id="notify" class="notify"></div>
     <link rel="stylesheet" href="https://ildar-meyker.ru/libs/pagelist/css/pagelist.min.css" />
     <script src="https://ildar-meyker.ru/libs/pagelist/js/pagelist.min.js"></script>
 </body>
 
 </html>
+
+
