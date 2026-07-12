@@ -1,0 +1,48 @@
+.select-default__option span {
+    display:none;
+}
+.page__h1_new
+{
+    font-family: TT Travels Next Trl, serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.2em;
+    letter-spacing: 2%;
+    text-transform: uppercase;
+}
+@media (max-width: 1299.98px)
+{
+    .page__h1_new {
+        font-size: 2rem;
+    }
+}
+.btn-cart__count:empty,.btn-fav__count:empty
+{
+    display:none;
+}
+body:has(#bx-panel) .page-header__top
+{
+    padding-top: 16.6rem;
+}
+body:has(#bx-panel.bx-panel-folded) .page-header__top
+{
+    padding-top: 5.6rem;
+}
+.l-index__products_new
+{
+    margin-top: 4rem;
+}
+.popup-ask-question
+{
+    max-width:737px;
+    font-size: 15px;
+}
+.popup-ask-question input[type=submit]
+{
+    text-align:center;
+    cursor: pointer;
+}
+.popup-ask-question .btn_row
+{
+    align-items: center;
+}
