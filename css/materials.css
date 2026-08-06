@@ -279,6 +279,15 @@
   margin: 0;
 }
 
+.materials-list__wrap {
+  display: flex;
+  gap: .8rem;
+}
+
+.materials-list__wrap .materials-list {
+  max-width: 50%;
+}
+
 .materials-card {
   position: relative;
   display: flex;
@@ -411,6 +420,16 @@
 .materials-action:focus-visible::after {
   opacity: 1;
   transform: translate(-50%, 0);
+}
+
+.materials-action--size {
+  color: #797D86;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 105%;
+  background: #fff;
+  padding: .3rem .4rem;
+  border-radius: .4rem;
 }
 
 .materials-download-all {
@@ -1320,10 +1339,14 @@ body.is-promo-video-modal-open {
   gap: 1.6rem;
   width: 100%;
   max-width: 79.5rem;
-  margin-top: 2.4rem;
+  margin-top: 1.6rem;
   padding: 2.4rem;
   border-radius: 1rem;
   background: #fff;
+}
+
+.article-materials.article-materials--video {
+  padding: 1.6rem;
 }
 
 .article-materials__title {
@@ -1349,7 +1372,7 @@ body.is-promo-video-modal-open {
   width: max-content;
   max-width: 100%;
   min-height: 0;
-  padding: 0.6rem 0;
+  padding: 0.8rem 0;
   border-radius: 0;
   background: transparent;
   transition: none;
@@ -1391,23 +1414,30 @@ body.is-promo-video-modal-open {
   display: flex;
   align-items: center;
   padding: 1.6rem;
-  box-shadow: inset 0 0.1rem #fff;
+  box-shadow: inset 0 0.1rem #E5E6E7;
 }
 
 @media (max-width: 599.98px) {
   .article-materials {
-    gap: 1.2rem;
-    padding: 1.6rem;
+    gap: 1.6rem;
+    padding: 0;
+    background: transparent;
+  }
+
+  .article-materials__panel {
+    background: #fff;
   }
 
   .article-materials__files {
-    padding: 1.2rem;
+    gap: 1.6rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .article-materials .materials-card {
     width: 100%;
-    min-height: 4.4rem;
-    padding: 0.6rem 0;
+    min-height: auto;
+    padding: 0;
   }
 
   .article-materials .materials-card__main {
@@ -1422,14 +1452,5 @@ body.is-promo-video-modal-open {
 
   .article-materials .materials-card__actions {
     margin-left: auto;
-  }
-
-  .article-materials .materials-action {
-    width: 3.2rem;
-    height: 3.2rem;
-  }
-
-  .article-materials__download-all {
-    padding: 1.2rem;
   }
 }
